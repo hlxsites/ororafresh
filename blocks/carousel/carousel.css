@@ -76,32 +76,48 @@ main .carousel-container {
   main .carousel-buttons button.selected {
     background-color: var(--link-color);
   }
-  
-  
-  @media (min-width: 900px) {
-    main .carousel > div {
-      background-image: unset;
-      color: unset;
-      align-items: center;
-    }
-    
-    main .carousel div.carousel-text {
-      margin: unset;
-      padding: 32px;
-      text-align: left;
-    }
-    main .carousel div.carousel-text h1 {
-        line-height: 110px;
-        margin-left: 250px;
-        margin-bottom: 100px;
-        max-width: 1120px;
-        color: white;
-        text-shadow: 2px 2px black;
-        height: 380px;
-        bottom: 0;
-        position: absolute;
-      }
 
+  @media (min-width: 900px) and (max-width: 1299px){
+
+    main .carousel > div {
+        background-image: unset;
+        color: unset;
+        align-items: center;
+      }
+      
+      main .carousel div.carousel-text {
+        margin: unset;
+        padding: 32px;
+        text-align: left;
+      }
+      main .carousel div.carousel-text h1 {
+          line-height: 110px;
+          margin-left: 250px;
+          margin-bottom: 100px;
+          max-width: 1120px;
+          color: white;
+          text-shadow: 2px 2px black;
+          height: 380px;
+          bottom: 0;
+          position: absolute;
+        }
+  
+        main .carousel div.carousel-text h2 {
+          line-height: 50px;
+          margin-left: 300px;
+          margin-bottom: 100px;
+          max-width: 830px;
+          color: white;
+          text-shadow: 2px 2px black;
+          height: 150px;
+          bottom: 0;
+          position: absolute;
+        }
+
+  }
+  
+  @media (min-width: 1300px) {
+  
       main .carousel div.carousel-text h2 {
         line-height: 50px;
         margin-left: 300px;
