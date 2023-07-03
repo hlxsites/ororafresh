@@ -57,6 +57,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+  document.querySelector('header').setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
   // enable nav dropdown keyboard accessibility
@@ -103,7 +104,7 @@ export default async function decorate(block) {
     nav.id = 'nav';
     nav.innerHTML = html;
 
-    const classes = ['brand', 'sections', 'tools'];
+    const classes = ['brand', 'sections'];
     classes.forEach((c, i) => {
       const section = nav.children[i];
       if (section) section.classList.add(`nav-${c}`);
