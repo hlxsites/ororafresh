@@ -57,12 +57,6 @@
   margin-top: 0;
 }
 
-.columns.locations > div > div {
-  text-align: center;
-}
-
-
-
 @media (min-width: 900px) {
   .columns > div {
     flex-direction: unset;
@@ -81,6 +75,10 @@
     margin-bottom: 50px;
   }
 
+  .columns-2-cols > div > div {
+    text-align: left;
+  }
+
   .columns-2-cols > div:first-of-type {
     margin-top: 0;
   }
@@ -91,10 +89,6 @@
 
   .columns-2-cols > div .button-container {
     text-align: unset;
-  }
-
-  .columns-2-cols > div > div {
-    text-align: left;
   }
 
   .columns-2-cols.alternate > div:nth-of-type(odd) {
@@ -151,6 +145,10 @@
 
 .global-resources div:nth-of-type(3) div:nth-of-type(4) {
   color: var(--text-green);
+}
+
+.columns.locations > div > div {
+  text-align: center;
 }
 
 #icons-sprite-map-marker-orange path {
