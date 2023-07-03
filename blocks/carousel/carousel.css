@@ -5,10 +5,8 @@ main .carousel-container {
   main .carousel {
     display: flex;
     scroll-snap-type: x mandatory;
-    overflow: scroll hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-    max-width: 1680px;
-    margin: auto;
   }
   
   main .carousel picture {
@@ -33,31 +31,17 @@ main .carousel-container {
     flex-shrink: 0;
     scroll-snap-align: start;
     position: relative;
-    min-height: 580px;
+    height: 580px;
     align-items: flex-end;
     display: flex;
+    background-image: linear-gradient(#0000, #0008);
+    color: white;
   }
   
   main .carousel div.carousel-text {
-    max-width: 1200px;
+    text-align: center;
+    width: 500px;
     margin: 0 auto;
-    background-color: white;
-    min-height: 188px;
-    padding: 0 28px;
-  }
-  
-  main .carousel div.carousel-text p {
-    margin: 10px 0 16px;
-    line-height: 1.2;
-  }
-  
-  main .carousel div.carousel-text h2 {
-    margin: 0;
-    margin-top: 16px; 
-  }
-  
-  main .carousel div.carousel-text .button {
-    margin: 0;
   }
     
   
@@ -71,7 +55,7 @@ main .carousel-container {
   
   main .carousel-wrapper .carousel-buttons {
     text-align: center;
-    margin-top: 0;
+    margin-top: -40px;
     position: absolute;
     display: flex;
     right: 0;
@@ -91,4 +75,19 @@ main .carousel-container {
   
   main .carousel-buttons button.selected {
     background-color: var(--link-color);
+  }
+  
+  
+  @media (min-width: 900px) {
+    main .carousel > div {
+      background-image: unset;
+      color: unset;
+      align-items: center;
+    }
+    
+    main .carousel div.carousel-text {
+      margin: unset;
+      padding: 32px;
+      text-align: left;
+    }
   }
