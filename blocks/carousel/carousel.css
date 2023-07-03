@@ -90,4 +90,16 @@ main .carousel-container {
       padding: 32px;
       text-align: left;
     }
+    main .carousel div.carousel-text.h1 {
+        line-height: 110px;
+        margin-left: 50px;
+        margin-bottom: 100px;
+        max-width: 961px;
+        color: white;
+        text-shadow: 2px 2px black;
+        height: 380px;
+        bottom: 0;
+        position: absolute;
+      }
+
   }
