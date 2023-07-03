@@ -37,6 +37,7 @@
   --text-grey: #999;
   --background-color: #fff;
   --background-black: #000;
+  --button-hover: #f7f7f7;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --nav-mobile-level1-background-color: #efefef;
@@ -178,29 +179,31 @@ a:hover {
 }
 
 /* buttons */
+.button-container {
+  text-align: center;
+}
+
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
+  padding: 15px 75px !important;
+  background-color: #eb3300 !important;
+  box-shadow: 0 5px 0 #cc2c00 !important;
+  color: var(--text-white);
+  font-weight: 400;
+  font-size: var(--body-font-size-s);
+  position: relative;
+  top: 0;
+  transition: all .2s ease-in-out;
   text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  line-height: normal;
+  border: 1px solid transparent;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
+  top: 3px;
+  color: var(--button-hover);
 }
 
 button:disabled, button:disabled:hover {
