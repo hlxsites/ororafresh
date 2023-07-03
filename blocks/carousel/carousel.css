@@ -102,4 +102,15 @@ main .carousel-container {
         position: absolute;
       }
 
+      main .carousel div.carousel-text h2 {
+        line-height: 110px;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        max-width: 961px;
+        color: white;
+        text-shadow: 2px 2px black;
+        height: 380px;
+        bottom: 0;
+        position: absolute;
+      }
   }
