@@ -3,6 +3,10 @@
   margin-bottom: 25px;
 }
 
+.columns.locations {
+  margin-bottom: 0;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,10 @@
 .columns img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.columns-wrapper + div h2 {
+  margin-top: 80px;
 }
 
 .columns > div > div {
@@ -45,6 +53,10 @@
   margin: auto;
 }
 
+.columns div p:first-child {
+  margin-top: 0;
+}
+
 @media (min-width: 900px) {
   .columns > div {
     flex-direction: unset;
@@ -63,6 +75,10 @@
     margin-bottom: 50px;
   }
 
+  .columns-2-cols > div > div {
+    text-align: left;
+  }
+
   .columns-2-cols > div:first-of-type {
     margin-top: 0;
   }
@@ -73,14 +89,6 @@
 
   .columns-2-cols > div .button-container {
     text-align: unset;
-  }
-
-  .columns-2-cols > div > div:last-of-type {
-    text-align: left;
-  }
-
-  .columns-2-cols > div > div:first-of-type {
-    text-align: right;
   }
 
   .columns-2-cols.alternate > div:nth-of-type(odd) {
@@ -123,6 +131,10 @@
   font-weight: 900;
 }
 
+.columns.locations > div > div {
+  text-align: center;
+}
+
 .global-resources div:nth-of-type(3) div:nth-of-type(1) {
   color: var(--text-purple);
 }
@@ -137,4 +149,12 @@
 
 .global-resources div:nth-of-type(3) div:nth-of-type(4) {
   color: var(--text-green);
+}
+
+#icons-sprite-map-marker-orange path {
+  fill: #f57c00;
+}
+
+#icons-sprite-map-marker-blue path {
+  fill: #0288d1;
 }
