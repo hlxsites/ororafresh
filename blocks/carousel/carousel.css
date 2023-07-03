@@ -90,7 +90,7 @@ main .carousel-container {
       padding: 32px;
       text-align: left;
     }
-    main .carousel div.carousel-text.h1 {
+    main .carousel div.carousel-text h1 {
         line-height: 110px;
         margin-left: 50px;
         margin-bottom: 100px;
