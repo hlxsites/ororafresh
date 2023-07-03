@@ -10,24 +10,42 @@ main .hero-container {
   
 main .hero {
   position: relative;
-  padding: 32px;
-  min-height: 300px;
+  padding: 50px;
+  height: 550px;
+  overflow: hidden;
 }
 
 main .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 961px;
+  margin-bottom: 106px;
+  margin-left: 12px;
   color: white;
+  text-shadow: 2px 2px black;
+  line-height: 140px;
+  position: absolute;
+  bottom: 0;
+  height: 380px;
+}
+
+.home main .hero h1 {
+  line-height: 110px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: calc(100vw/12.5);
+  }
 }
 
 main .hero picture {
   position: absolute;
   z-index: -1;
   top: 0;
+  right: 0;
   left: 0;
   bottom: 0;
-  right: 0;
   object-fit: cover;
   box-sizing: border-box;
 }

@@ -77,6 +77,10 @@
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;
   }
+
+  :root .home {
+    --heading-font-size-xxl: 100px;
+  }
 }
 
 body {
@@ -116,7 +120,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
