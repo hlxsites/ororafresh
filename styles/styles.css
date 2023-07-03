@@ -293,3 +293,47 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+/* page width */
+header .nav-wrapper,
+.section > div,
+.hero > div > div,
+footer .footer {
+  margin:auto;
+}
+
+@media (min-width: 768px) {
+  header .nav-wrapper,
+  .section > div,
+  .hero > div > div,
+  footer .footer {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 900px) {
+  header .nav-wrapper,
+  .section > div,
+  .hero > div > div,
+  footer .footer {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .nav-wrapper,
+  .section > div,
+  .hero > div > div,
+  footer .footer {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .nav-wrapper,
+  .section > div,
+  .hero > div > div,
+  footer .footer {
+    max-width: 1170px;
+  }
+}
