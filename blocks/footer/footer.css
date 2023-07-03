@@ -1,14 +1,60 @@
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
+  padding: 85px 50px 40px;
+  background-color: var(--background-black);
   font-size: var(--body-font-size-s);
 }
 
 footer .footer {
   max-width: 1200px;
   margin: auto;
+  color: var(--text-white);
+}
+
+footer .footer .columns > div > div:first-child {
+  display: flex;
+}
+
+footer .footer .columns > div > div:first-child p:last-child {
+  margin-left: auto;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 50px;
+}
+
+footer .footer ul li {
+  margin-left: 50px;
+}
+
+footer .footer a:any-link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+footer .footer > div > div:last-of-type {
+  color: var(--text-grey);
+  font-size: var(--body-font-size-xs);
+  display: flex;
+  width: 100%;
+}
+
+footer .footer > div > div:last-of-type > ul {
+  margin-left: auto;
+}
+
+footer .footer > div > div:last-of-type a:any-link {
+  color: currentColor;
+}
+
+#icons-sprite-facebook path,
+#icons-sprite-linkedin path,
+#icons-sprite-youtube path {
+  fill: #fff;
 }
