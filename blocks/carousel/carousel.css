@@ -67,10 +67,12 @@ main .carousel-buttons button {
     display: block;
     height: 10px;
     width: 10px;
-    padding: 0;
+    padding: 0 !important;
     margin: 5px;
     border-radius: 5px;
     background-color: var(--highlight-background-color);
+    box-shadow: none;
+
 }
 
 main .carousel-buttons button.selected {
