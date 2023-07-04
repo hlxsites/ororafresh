@@ -98,7 +98,6 @@ main .carousel div.carousel-text h2::after{
   }
 
 @media (min-width: 900px) and (max-width: 1299px) {
-
     main .carousel>div {
         background-image: unset;
         color: unset;
@@ -144,7 +143,6 @@ main .carousel div.carousel-text h2::after{
 }
 
 @media (min-width: 1300px) {
-
     main .carousel>div {
         background-image: unset;
         color: unset;
