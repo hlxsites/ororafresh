@@ -110,20 +110,22 @@ main .carousel div.carousel-text h2::after{
     }
 
     main .carousel div.carousel-text h1 {
+        font-size: 90px;
         line-height: 110px;
         margin-left: 250px;
         margin-bottom: 100px;
         max-width: 1120px;
         color: white;
         text-shadow: 2px 2px black;
-        height: 380px;
+        height: 350px;
         bottom: 0;
         position: absolute;
     }
 
     main .carousel div.carousel-text h2 {
-        line-height: 50px;
-        margin-left: 300px;
+        font-size: 50px;
+        line-height: 80px;
+        margin-left: 250px;
         margin-bottom: 100px;
         max-width: 830px;
         color: white;
@@ -154,20 +156,22 @@ main .carousel div.carousel-text h2::after{
     }
 
     main .carousel div.carousel-text h1 {
+        font-size: 90px;
         line-height: 110px;
         margin-left: 250px;
         margin-bottom: 100px;
         max-width: 1120px;
         color: white;
         text-shadow: 2px 2px black;
-        height: 380px;
+        height: 350px;
         bottom: 0;
         position: absolute;
     }
 
     main .carousel div.carousel-text h2 {
-        line-height: 50px;
-        margin-left: 300px;
+        font-size: 50px;
+        line-height: 80px;
+        margin-left: 250px;
         margin-bottom: 100px;
         max-width: 830px;
         color: white;
