@@ -52,9 +52,8 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
-  if (! main.querySelector('.carousel')) buildAutoBlocks(main);
-  else {
-  main.querySelector('.carousel').contains(main.querySelector('h1')) || buildAutoBlocks(main);}
+  if (!main.querySelector('.carousel')) buildAutoBlocks(main);
+  else { main.querySelector('.carousel').contains(main.querySelector('h1')) || buildAutoBlocks(main); }
   // buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
