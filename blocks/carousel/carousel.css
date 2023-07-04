@@ -127,7 +127,7 @@ main .carousel div.carousel-text h2::after{
         line-height: 80px;
         margin-left: 250px;
         margin-bottom: 100px;
-        max-width: 830px;
+        max-width: 1300px;
         color: white;
         text-shadow: 2px 2px black;
         height: 150px;
@@ -170,13 +170,13 @@ main .carousel div.carousel-text h2::after{
 
     main .carousel div.carousel-text h2 {
         font-size: 50px;
-        line-height: 80px;
+        line-height: 70px;
         margin-left: 250px;
         margin-bottom: 100px;
-        max-width: 830px;
+        max-width: 1150px;
         color: white;
         text-shadow: 2px 2px black;
-        height: 240px;
+        height: 200px;
         bottom: 0;
         position: absolute;
     }
