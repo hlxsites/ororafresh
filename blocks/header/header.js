@@ -110,6 +110,13 @@ export default async function decorate(block) {
       if (section) section.classList.add(`nav-${c}`);
     });
 
+    const brandImg = nav.querySelector('picture');
+    const brandImgLink = document.createElement('a');
+    brandImgLink.href = '/';
+    brandImgLink.title = 'Home';
+    brandImg.after(brandImgLink);
+    brandImgLink.appendChild(brandImg);
+
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
