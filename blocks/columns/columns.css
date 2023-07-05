@@ -29,11 +29,15 @@
 
 .columns > div > .columns-img-col {
   order: 0;
+  margin-bottom: 30px;
 }
-
 
 .columns-2-cols img {
   width: 300px;
+}
+
+.columns-3-cols img {
+  width: 192px;
 }
 
 .columns-4-cols img {
