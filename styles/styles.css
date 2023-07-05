@@ -13,7 +13,7 @@
 /* fallback font for Center Bold (normal - 400)  */
 @font-face {
   font-family: "center-bold-normal-400-fallback";
-  size-adjust: 94.7%;
+  size-adjust: 95.8%;
   src: local("Arial");
   font-display: swap;
 }
