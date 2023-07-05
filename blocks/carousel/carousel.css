@@ -64,6 +64,7 @@ main .carousel-wrapper .carousel-buttons {
 }
 
 main .carousel-buttons button {
+    top: 0px;
     display: block;
     height: 15px;
     width: 15px;
