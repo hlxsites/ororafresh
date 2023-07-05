@@ -1,19 +1,36 @@
+main .section.cards-container {
+  padding-top: 10px;
+  padding-bottom: 120px;
+}
+
+main .section .cards-wrapper {
+  margin-top: 40px;
+}
+
+main .section .cards {
+  text-align: left;
+  font-size: var(--body-font-size-s);
+  padding: 15px;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 16px;
+  grid-gap: 30px;
 }
 
 .cards > ul > li {
   border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  position: relative;
+  padding-bottom: 93px;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 20px;
 }
 
 .cards .cards-card-image {
@@ -28,4 +45,15 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards .button-container {
+  position: absolute;
+  bottom: 25px;
+  width: calc(100% - 40px);
+}
+
+.cards a.button {
+  width: 100%;
+  padding: 15px 0;
 }

@@ -11,6 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  createOptimizedPicture,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -28,6 +29,19 @@ function buildHeroBlock(main) {
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
+}
+
+/**
+ * Decorate sections with a background image where defined in section metadata.
+ * @param {Element} main The container element
+ */
+function decorateSectionBackgrounds(main) {
+  main.querySelectorAll(':scope > .section[data-background]').forEach((section) => {
+    const src = section.dataset.background;
+    const picture = createOptimizedPicture(src, '', false);
+    section.appendChild(picture);
+    section.classList.add('section-with-background');
+  });
 }
 
 /**
@@ -54,6 +68,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionBackgrounds(main);
   decorateBlocks(main);
 }
 
