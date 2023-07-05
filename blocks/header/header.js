@@ -94,7 +94,7 @@ export default async function decorate(block) {
   const header = block.closest('header');
   header.classList.add('float');
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => header.classList.toggle('float'))
+    entries.forEach((entry) => header.classList.toggle('float'));
   }, { threshold: 0.9 });
   observer.observe(document.querySelector('.hero.block'));
 
