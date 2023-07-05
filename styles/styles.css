@@ -53,8 +53,8 @@
   --nav-mobile-border-color: #ddd;
 
   /* fonts */
-  --body-font-family: 'Roboto', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: 'Center Bold', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Roboto', 'roboto-normal-400-fallback', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: 'Center Bold', 'center-bold-normal-400-fallback', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
