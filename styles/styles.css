@@ -206,7 +206,7 @@ a:hover {
   text-align: center;
 }
 
-a.button:any-link, button {
+a.button.primary:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
@@ -224,7 +224,7 @@ a.button:any-link, button {
   border: 1px solid transparent;
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+a.button.primary:hover, a.button.primary:focus, button.primary:hover, button.primary:focus  {
   top: 3px;
   color: var(--button-color-hover);
 }
@@ -236,8 +236,11 @@ button:disabled, button:disabled:hover {
 
 a.button.secondary, button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
+  color: var(--text-color);
+  font-size: var(--body-font-size-xs);
+  font-weight: 100;
+  text-decoration: none;
+  font-style: normal;
 }
 
 main input {
