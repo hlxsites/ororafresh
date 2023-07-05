@@ -18,6 +18,8 @@ main .hero {
 main .hero h1 {
   color: white;
   text-shadow: 2px 2px black;
+  position: absolute;
+  bottom: 0;
 }
 
 .home main .hero h1 {
@@ -28,7 +30,10 @@ main .hero h1 {
 
 @media (max-width: 899px) {
   .hero h1 {
-    font-size: calc(100vw/12.5);
+    font-size: 10vw;
+    width: 60%;
+    line-height: calc(10vw + 4px);
+    margin-bottom: 90px;
   }
 
   main .hero {
@@ -42,8 +47,6 @@ main .hero h1 {
     margin-bottom: 106px;
     margin-left: 12px;
     line-height: 140px;
-    position: absolute;
-    bottom: 0;
     height: 380px;
   }
 
