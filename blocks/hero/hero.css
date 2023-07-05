@@ -10,7 +10,7 @@ main .hero-container {
   
 main .hero {
   position: relative;
-  padding: 50px;
+  padding: 0 50px;
   height: 550px;
   overflow: hidden;
 }
@@ -45,6 +45,10 @@ main .hero h1 {
     position: absolute;
     bottom: 0;
     height: 380px;
+  }
+
+  main .hero {
+    padding: 50px;
   }
 }
 
