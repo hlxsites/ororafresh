@@ -10,10 +10,10 @@
  * governing permissions and limitations under the License.
  */
 
-/* fallback font for Center Bold (normal - 400) */
+/* fallback font for Center Bold (normal - 400)  */
 @font-face {
   font-family: "center-bold-normal-400-fallback";
-  size-adjust: 94.7%;
+  size-adjust: 95.8%;
   src: local("Arial");
   font-display: swap;
 }
@@ -21,7 +21,7 @@
 /* fallback font for Roboto (normal - 400) */
 @font-face {
   font-family: "roboto-normal-400-fallback";
-  size-adjust: 93.5%;
+  size-adjust: 99.9%;
   src: local("Arial");
   font-display: swap;
 }
@@ -53,8 +53,8 @@
   --nav-mobile-border-color: #ddd;
 
   /* fonts */
-  --body-font-family: 'Roboto', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: 'Center Bold', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Roboto', 'roboto-normal-400-fallback', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: 'Center Bold', 'center-bold-normal-400-fallback', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -313,7 +313,6 @@ main .section.hero-container {
     padding: 64px 32px;
   }
 }
-
 
 @media (min-width: 900px) {
   .section > div,
