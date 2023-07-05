@@ -73,6 +73,7 @@
 
   /* nav height */
   --nav-height: 125px;
+  --nav-height-float: 95px;
   --nav-expanded-height: 331px;
   --nav-expanded-expanded-height: 425px;
 
@@ -99,10 +100,19 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
   width: 100%;
   background-color: var(--background-color);
   z-index: 2;
+}
+
+header.float {
+  opacity: 1;
+}
+
+header,
+nav {
+  height: var(--nav-height);
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 899px) {
@@ -114,7 +124,14 @@ header {
 @media (min-width: 900px) {
   header {
     opacity: 0.85;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  header.float,
+  header.float nav {
+    height: var(--nav-height-float);
   }
 }
 
