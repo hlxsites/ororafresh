@@ -15,6 +15,11 @@ main .hero {
   overflow: hidden;
 }
 
+main .hero h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
 .home main .hero h1 {
   line-height: 110px;
   margin-left: 50px;
@@ -25,6 +30,10 @@ main .hero {
   .hero h1 {
     font-size: calc(100vw/12.5);
   }
+
+  main .hero {
+    height: 300px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -32,8 +41,6 @@ main .hero {
     max-width: 961px;
     margin-bottom: 106px;
     margin-left: 12px;
-    color: white;
-    text-shadow: 2px 2px black;
     line-height: 140px;
     position: absolute;
     bottom: 0;
