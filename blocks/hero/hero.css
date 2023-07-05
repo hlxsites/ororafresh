@@ -33,9 +33,16 @@ main .hero h1 {
   margin-bottom: 100px;
 }
 
-@media (max-width: 900px) {
-  .hero h1 {
-    font-size: calc(100vw/12.5);
+@media (max-width: 899px) {
+  main .hero h1 {
+    font-size: 8vw;
+    position: unset;
+    /* width: 60%; */
+    line-height: calc(8vw + 4px);
+  }
+  
+  main .hero {
+    height: 32vw;
   }
 }
 
