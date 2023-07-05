@@ -95,9 +95,9 @@ main .carousel div.carousel-text h2 {
     height: 150px;
 }
 
-main .carousel div.carousel-text h2::after{
+main .carousel div.carousel-text h2::after {
     content: none;
-  }
+}
 
 main .carousel-image picture:first-of-type img {
     display: none;
@@ -149,9 +149,9 @@ main .carousel-image picture:last-of-type img {
         position: absolute;
     }
 
-    main .carousel div.carousel-text h2::after{
+    main .carousel div.carousel-text h2::after {
         content: none;
-      }
+    }
 
 }
 
@@ -194,16 +194,15 @@ main .carousel-image picture:last-of-type img {
         position: absolute;
     }
 
-    main .carousel div.carousel-text h2::after{
+    main .carousel div.carousel-text h2::after {
         content: none;
-      }
+    }
 
     main .carousel-image picture:last-of-type img {
         display: none;
     }
-    
+
     main .carousel-image picture:first-of-type img {
         display: block;
     }
-    }
-    
+}
