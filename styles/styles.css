@@ -41,6 +41,7 @@
   --text-green: #69923a;
   --background-color: #fff;
   --background-black: #000;
+  --background-light-blue: rgb(139 193 200);
   --button-color: #fff;
   --button-color-hover: #f7f7f7;
   --button-background: #eb3300;
@@ -134,13 +135,27 @@ h4 { font-size: var(--heading-font-size-xs) }
 h5 { font-size: var(--heading-font-size-xs) }
 h6 { font-size: var(--heading-font-size-xs) }
 
-h2::after{
+.cards h3 {
+  font-size: var(--heading-font-size-s);
+}
+
+h2::after,
+.cards h3::after {
   content: "";
   display: block;
   border-bottom: 2px solid var(--button-background);
   height: 1px;
-  width: 120px;
+}
+
+h2::after {
   margin: 22px auto 30px;
+  width: 120px;
+}
+
+.cards h3::after {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 80px;
 }
 
 p, dl, ol, ul, pre, blockquote {
@@ -195,7 +210,7 @@ a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
-  padding: 15px 75px !important;
+  padding: 15px 75px;
   background-color: var(--button-background);
   box-shadow: 0 5px 0 var(--button-shadow);
   color: var(--button-color);
@@ -282,6 +297,10 @@ main .section {
   text-align: center;
 }
 
+main .section.light-blue {
+  background-color: var(--background-light-blue);
+}
+
 main .section.hero-container {
   text-align: unset;
 }
@@ -307,11 +326,6 @@ main .section.hero-container {
     max-width: 1170px;
     margin: auto;
   }
-}
-
-/* section metadata */
-main .section.highlight {
-  background-color: var(--highlight-background-color);
 }
 
 /* page width */
@@ -356,4 +370,36 @@ footer .footer {
   footer .footer {
     max-width: 1170px;
   }
+}
+
+/* section metadata */
+main .section.highlight {
+  background-color: var(--highlight-background-color);
+}
+
+main .section-with-background {
+  box-sizing: border-box;
+  position: relative;
+}
+
+main .section-with-background > div:first-of-type,
+main .section-with-background > div:first-of-type>:first-child {
+  margin-top: 0;
+}
+
+main .section-with-background > div:last-of-type,
+main .section-with-background > div:last-of-type>:last-child {
+  margin-bottom: 0;
+}
+
+main .section-with-background > picture:last-of-type img {
+  width: var(--wrapper-width);
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  object-fit: cover;
 }
