@@ -76,7 +76,8 @@ main .carousel-buttons button {
 }
 
 main .carousel-buttons button.selected {
-    background-color: var(--link-color);
+    top: 0px;
+    background-color: var(--button-color);
 }
 
 main .carousel div.carousel-text h1 {
