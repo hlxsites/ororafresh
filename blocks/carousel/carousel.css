@@ -108,8 +108,6 @@ main .carousel-image picture:last-of-type img {
 }
 
 
-
-
 @media (min-width: 900px) and (max-width: 1199px) {
     main .carousel>div {
         background-image: unset;
