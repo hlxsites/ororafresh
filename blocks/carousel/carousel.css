@@ -99,6 +99,17 @@ main .carousel div.carousel-text h2::after{
     content: none;
   }
 
+main .carousel-image picture:first-of-type img {
+    display: none;
+}
+
+main .carousel-image picture:last-of-type img {
+    display: block;
+}
+
+
+
+
 @media (min-width: 900px) and (max-width: 1199px) {
     main .carousel>div {
         background-image: unset;
@@ -186,4 +197,13 @@ main .carousel div.carousel-text h2::after{
     main .carousel div.carousel-text h2::after{
         content: none;
       }
-}
+
+    main .carousel-image picture:last-of-type img {
+        display: none;
+    }
+    
+    main .carousel-image picture:first-of-type img {
+        display: block;
+    }
+    }
+    
