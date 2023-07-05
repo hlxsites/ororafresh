@@ -37,6 +37,9 @@ main .hero h1 {
   .hero h1 {
     font-size: calc(100vw/12.5);
   }
+  main .hero {
+    height: 35vw;
+  }
 }
 
 main .hero picture {
