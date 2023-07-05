@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
-/* fallback font for Center Bold (normal - 400) */
+/* fallback font for Center Bold (normal - 400)  */
 @font-face {
   font-family: "center-bold-normal-400-fallback";
   size-adjust: 94.7%;
@@ -313,7 +313,6 @@ main .section.hero-container {
     padding: 64px 32px;
   }
 }
-
 
 @media (min-width: 900px) {
   .section > div,
