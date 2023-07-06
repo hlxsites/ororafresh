@@ -19,6 +19,7 @@ export default function decorate(block) {
           const picLink = document.createElement('a');
           picLink.href = nextLink.href;
           picLink.title = nextLink.textContent;
+          picLink.classList.add('linked-picture');
           pic.after(picLink);
           picLink.appendChild(pic);
         }
