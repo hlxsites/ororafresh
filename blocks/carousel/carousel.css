@@ -39,7 +39,7 @@ main .carousel > div {
     align-items: flex-end;
     display: flex;
     background-image: linear-gradient(#0000, #0008);
-    color: white;
+    color: var(--text-white);
     opacity: 0;
     transition: opacity 0.3s ease-in-out 0.3s;
 }
@@ -92,14 +92,14 @@ main .carousel-buttons button.selected {
 }
 
 main .carousel div.carousel-text h1 {
-    color: white;
+    color: var(--text-white);
     text-shadow: 2px 2px black;
     font-size: 50px;
     height: 250px;
 }
 
 main .carousel div.carousel-text h2 {
-    color: white;
+    color: var(--text-white);
     text-shadow: 2px 2px black;
     font-size: 30px;
     height: 150px;
@@ -137,7 +137,7 @@ main .carousel-image picture:last-of-type img {
         margin-left: 250px;
         margin-bottom: 100px;
         max-width: 1120px;
-        color: white;
+        color: var(--text-white);
         text-shadow: 2px 2px black;
         height: 350px;
         bottom: 0;
@@ -149,8 +149,8 @@ main .carousel-image picture:last-of-type img {
         line-height: 80px;
         margin-left: 250px;
         margin-bottom: 100px;
-        max-width: 1300px;
-        color: white;
+        max-width: 1150px;
+        color: var(--text-white);
         text-shadow: 2px 2px black;
         height: 150px;
         bottom: 0;
@@ -182,7 +182,7 @@ main .carousel-image picture:last-of-type img {
         margin-left: 250px;
         margin-bottom: 100px;
         max-width: 1120px;
-        color: white;
+        color: var(--text-white);
         text-shadow: 2px 2px black;
         height: 350px;
         bottom: 0;
@@ -195,7 +195,7 @@ main .carousel-image picture:last-of-type img {
         margin-left: 250px;
         margin-bottom: 100px;
         max-width: 1150px;
-        color: white;
+        color: var(--text-white);
         text-shadow: 2px 2px black;
         height: 200px;
         bottom: 0;
