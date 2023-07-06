@@ -48,6 +48,13 @@
   width: 150px;
 }
 
+.global-resources p,
+.global-resources img,
+.global-resources h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .columns.full-image img {
   width: 100%;
 }
@@ -139,6 +146,10 @@
   text-align: center;
 }
 
+.global-resources > div > div {
+  margin-bottom: 10px;
+}
+
 .global-resources > div > div:nth-of-type(1) {
   color: var(--text-purple);
 }
@@ -157,17 +168,6 @@
 
 .global-resources > div > div > h3 {
   color: var(--text-color);
-}
-
-.global-resources > div > div {
-  margin-bottom: 10px;
-}
-
-.global-resources p,
-.global-resources img,
-.global-resources h3 {
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 #icons-sprite-map-marker-orange path {
