@@ -50,7 +50,9 @@ function decorateSectionBackgrounds(main) {
  */
 function buildAutoBlocks(main) {
   try {
-    buildHeroBlock(main);
+    if (!main.querySelector('.carousel')) buildHeroBlock(main);
+    else if (!main.querySelector('.carousel').contains(main.querySelector('h1'))) buildHeroBlock(main);
+    // buildHeroBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
