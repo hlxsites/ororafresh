@@ -42,6 +42,7 @@
   --background-color: #fff;
   --background-black: #000;
   --background-light-blue: rgb(139 193 200);
+  --background-grey: #f7f7f7;
   --button-color: #fff;
   --button-color-hover: #f7f7f7;
   --button-background: #eb3300;
@@ -221,6 +222,7 @@ a:hover {
 /* buttons */
 .button-container {
   text-align: center;
+  margin-top: 40px;
 }
 
 a.button.primary:any-link {
@@ -321,6 +323,10 @@ main .section.light-blue {
   background-color: var(--background-light-blue);
 }
 
+main .section.grey {
+  background-color: var(--background-grey);
+}
+
 main .section.hero-container {
   text-align: unset;
 }
@@ -396,29 +402,31 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-main .section-with-background {
-  box-sizing: border-box;
-  position: relative;
-}
-
-main .section-with-background > div:first-of-type,
-main .section-with-background > div:first-of-type>:first-child {
-  margin-top: 0;
-}
-
-main .section-with-background > div:last-of-type,
-main .section-with-background > div:last-of-type>:last-child {
-  margin-bottom: 0;
-}
-
-main .section-with-background > picture:last-of-type img {
-  width: var(--wrapper-width);
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  object-fit: cover;
+@media (min-width: 768px) {
+  main .section-with-background {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  main .section-with-background > div:first-of-type,
+  main .section-with-background > div:first-of-type>:first-child {
+    margin-top: 0;
+  }
+  
+  main .section-with-background > div:last-of-type,
+  main .section-with-background > div:last-of-type>:last-child {
+    margin-bottom: 0;
+  }
+  
+  main .section-with-background > picture:last-of-type img {
+    width: var(--wrapper-width);
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    object-fit: cover;
+  }
 }
