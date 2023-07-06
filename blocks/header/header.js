@@ -1,4 +1,4 @@
-import { getMetadata, decorateIcons } from '../../scripts/lib-franklin.js';
+import { getMetadata, decorateIcons, createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
@@ -123,6 +123,9 @@ export default async function decorate(block) {
     brandImgLink.title = 'Home';
     brandImg.after(brandImgLink);
     brandImgLink.appendChild(brandImg);
+    const logo = createOptimizedPicture('/images/orora-fresh-logo.png', 'ororafresh logo');
+    brandImgLink.after(logo);
+    brandImgLink.remove();
 
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
