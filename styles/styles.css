@@ -249,6 +249,10 @@ a.button.primary:hover, a.button.primary:focus  {
   color: var(--button-color-hover);
 }
 
+a.button.primary strong {
+  font-weight: 400;
+}
+
 button:disabled, button:disabled:hover {
   background-color: var(--overlay-background-color);
   cursor: unset;
