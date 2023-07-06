@@ -142,12 +142,12 @@
   font-weight: 900;
 }
 
-.columns.locations > div > div {
-  text-align: center;
-}
-
 .global-resources > div > div {
   margin-bottom: 10px;
+}
+
+.columns.locations > div > div {
+  text-align: center;
 }
 
 .global-resources > div > div:nth-of-type(1) {
