@@ -47,6 +47,7 @@
   --button-color-hover: #f7f7f7;
   --button-background: #A82600;
   --button-shadow: #801E00;
+  --title-border-color: #eb3300;
   --overlay-background-color: #eee;
   --highlight-background-color: #f4f4f4;
   --nav-mobile-level1-background-color: #efefef;
@@ -161,7 +162,7 @@ h2::after,
 .cards h3::after {
   content: "";
   display: block;
-  border-bottom: 2px solid var(--button-background);
+  border-bottom: 2px solid var(--title-border-color);
   height: 1px;
 }
 
