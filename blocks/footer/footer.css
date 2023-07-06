@@ -20,9 +20,6 @@ footer .footer > div {
 footer .footer .columns img {
   width: unset;
   height: auto;
-}
-
-footer .footer .columns img {
   max-width: 230px;
 }
 
