@@ -24,8 +24,8 @@ main .carousel picture {
 main .carousel img {
     object-fit: cover;
     width: 100%;
-    height: auto%;
-    object-position: top;
+    height: auto;
+    object-position: 90%;
 }
 
 main .carousel > div {
