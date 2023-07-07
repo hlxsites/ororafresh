@@ -213,4 +213,14 @@ main .carousel-image picture:last-of-type img {
     main .carousel-image picture:first-of-type img {
         display: block;
     }
+    
+}
+
+
+@media (min-width: 1800px) {
+    
+    main .carousel div.carousel-text h1 {
+        max-width: 1300px; 
+    }
+
 }
