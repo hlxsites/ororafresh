@@ -24,8 +24,8 @@ main .carousel picture {
 main .carousel img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
-    object-position: 90%;
+    height: auto%;
+    object-position: top;
 }
 
 main .carousel > div {
@@ -66,7 +66,7 @@ main .carousel-wrapper {
 main .carousel-wrapper .carousel-buttons {
     text-align: center;
     margin-top: -40px;
-    
+
     /* position: absolute; */
     display: flex;
     right: 0;
@@ -118,6 +118,32 @@ main .carousel-image picture:last-of-type img {
     display: block;
 }
 
+main .carousel div.carousel-text h1 {
+    font-size: 6vw;
+    line-height: 110px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    max-width: 1120px;
+    color: var(--text-white);
+    text-shadow: 2px 2px black;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+}
+
+main .carousel div.carousel-text h2 {
+    font-size: 2.9vw;
+    line-height: 70px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    max-width: 1199px;
+    color: var(--text-white);
+    text-shadow: 2px 2px black;
+    height: 0;
+    bottom: 0;
+    position: absolute;
+}
+
 
 @media (min-width: 900px) and (max-width: 1199px) {
     main .carousel>div {
@@ -132,7 +158,7 @@ main .carousel-image picture:last-of-type img {
         text-align: left;
     }
 
-    main .carousel div.carousel-text h1 {
+    /* main .carousel div.carousel-text h1 {
         font-size: 90px;
         line-height: 110px;
         margin-left: 250px;
@@ -156,7 +182,7 @@ main .carousel-image picture:last-of-type img {
         height: 150px;
         bottom: 0;
         position: absolute;
-    }
+    } */
 
     main .carousel div.carousel-text h2::after {
         content: none;
@@ -177,7 +203,7 @@ main .carousel-image picture:last-of-type img {
         text-align: left;
     }
 
-    main .carousel div.carousel-text h1 {
+    /* main .carousel div.carousel-text h1 {
         font-size: 90px;
         line-height: 110px;
         margin-left: 250px;
@@ -201,7 +227,7 @@ main .carousel-image picture:last-of-type img {
         height: 200px;
         bottom: 0;
         position: absolute;
-    }
+    } */
 
     main .carousel div.carousel-text h2::after {
         content: none;
