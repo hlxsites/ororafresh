@@ -132,7 +132,7 @@ main .carousel-image picture:last-of-type img {
     }
 
     main .carousel div.carousel-text h1 {
-        font-size: 5.5px;
+        font-size: 5.5vw;
         line-height: 110px;
         margin-left: 150px;
         margin-bottom: 100px;
