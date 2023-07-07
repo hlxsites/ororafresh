@@ -218,9 +218,8 @@ main .carousel-image picture:last-of-type img {
 
 
 @media (min-width: 1800px) {
-    
     main .carousel div.carousel-text h1 {
-        max-width: 1300px; 
+        max-width: 1500px; 
     }
 
 }
