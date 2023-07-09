@@ -9,6 +9,7 @@ export default function decorate(block) {
     });
     /* buttons */
     const button = document.createElement('button');
+    button.setAttribute('id', `carousel-button-${i}`);
     if (!i) button.classList.add('selected');
     button.addEventListener('click', () => {
       [...buttons.children].forEach((r) => r.classList.remove('selected'));
@@ -19,4 +20,8 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
+  const button0 = document.getElementById('carousel-button-0');
+  const button1 = document.getElementById('carousel-button-1');
+  setInterval(() => { button1.click(); }, 10000);
+  setInterval(() => { button0.click(); }, 20000);
 }
