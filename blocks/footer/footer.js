@@ -22,4 +22,8 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
+  const cookieiconparent = document.querySelector('.footer .columns div div');
+  const nextdiv = document.createElement('div');
+  nextdiv.setAttribute('id', 'teconsent');
+  cookieiconparent.appendChild(nextdiv);
 }
