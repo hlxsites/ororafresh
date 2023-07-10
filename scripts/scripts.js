@@ -126,4 +126,24 @@ async function loadPage() {
   loadDelayed();
 }
 
+export async function loadScript(url, attrs = {}) {
+  const script = document.createElement('script');
+  script.src = url;
+  // eslint-disable-next-line no-restricted-syntax
+  for (const [name, value] of Object.entries(attrs)) {
+    script.setAttribute(name, value);
+  }
+  const loadingPromise = new Promise((resolve, reject) => {
+    script.onload = resolve;
+    script.onerror = reject;
+  });
+  document.head.append(script);
+  return loadingPromise;
+}
+
+export async function loadConsentManager() {
+  await loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
+  window.dispatchEvent(new CustomEvent('consentmanager'));
+}
+
 loadPage();
