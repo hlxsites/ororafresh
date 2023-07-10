@@ -91,12 +91,10 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  const header = block.closest('header');
-  header.classList.add('float');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(() => header.classList.toggle('float'));
-  }, { threshold: 0.9 });
-  observer.observe(document.querySelector('.hero.block'));
+  window.onscroll = function() {
+    if (window.scrollY > 200) block.closest('header').classList.add('float');
+    else block.closest('header').classList.remove('float');
+  }
 
   // fetch nav content
   const navMeta = getMetadata('nav');
