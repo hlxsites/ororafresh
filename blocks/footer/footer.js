@@ -21,5 +21,11 @@ export default async function decorate(block) {
 
     decorateIcons(footer);
     block.append(footer);
+    const blackbar = document.createElement('div');
+    blackbar.id = 'consent_blackbar';
+    block.append(blackbar);
+    const tecontent = document.createElement('div');
+    tecontent.id = 'teconsent';
+    block.append(tecontent);
   }
 }
