@@ -66,8 +66,6 @@ main .carousel-wrapper {
 main .carousel-wrapper .carousel-buttons {
     text-align: center;
     margin-top: -40px;
-
-    /* position: absolute; */
     display: flex;
     right: 0;
     left: 0;
@@ -214,12 +212,4 @@ main .carousel-image picture:last-of-type img {
         display: block;
     }
     
-}
-
-
-@media (min-width: 1800px) {
-    main .carousel div.carousel-text h1 {
-        max-width: 1500px; 
-    }
-
 }

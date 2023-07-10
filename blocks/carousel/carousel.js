@@ -20,8 +20,5 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
-  const button0 = document.getElementById('carousel-button-0');
-  const button1 = document.getElementById('carousel-button-1');
-  setInterval(() => { button1.click(); }, 10000);
-  setInterval(() => { button0.click(); }, 20000);
+  setInterval(() => { let nextButton = buttons.querySelector('button.selected').nextSibling; if (!nextButton) nextButton = buttons.querySelector('button'); nextButton.click(); }, 10000);
 }
