@@ -243,13 +243,14 @@ header nav .nav-sections ul > li > ul {
     width: 150px;
     margin-top: 0;
     padding: 50px 20px 0;
-    background-color: var(--background-color);
+    background-color: unset;
     white-space: initial;
   }
 
   header nav .nav-sections > ul > li:hover > ul,
   header nav .nav-sections > ul > li > ul:hover {
     height: 90px;
+    background-color: var(--background-color);
   }
 
   header nav .nav-sections > ul > li > ul::before {
