@@ -50,7 +50,7 @@ main .carousel > div.selected {
 
 main .carousel div.carousel-text {
     text-align: center;
-    width: 500px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -169,7 +169,7 @@ main .carousel-image picture:last-of-type img {
     }
 
     main .carousel div.carousel-text {
-        margin: unset;
+        margin: auto;
         padding: 32px;
         text-align: left;
     }
@@ -177,7 +177,7 @@ main .carousel-image picture:last-of-type img {
     main .carousel div.carousel-text h1 {
         font-size: 90px;
         line-height: 110px;
-        margin-left: 300px;
+        margin-left: 0px;
         margin-bottom: 100px;
         max-width: 1000px;
         color: var(--text-white);
@@ -190,7 +190,7 @@ main .carousel-image picture:last-of-type img {
     main .carousel div.carousel-text h2 {
         font-size: 50px;
         line-height: 70px;
-        margin-left: 300px;
+        margin-left: 0px;
         margin-bottom: 100px;
         max-width: 1150px;
         color: var(--text-white);
