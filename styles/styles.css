@@ -403,6 +403,10 @@ footer .footer {
   }
 }
 
+main > div:first-of-type:not(.hero-container, .carousel-container) {
+  margin-top: 100px;
+}
+
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
