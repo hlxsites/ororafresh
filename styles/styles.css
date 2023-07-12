@@ -407,6 +407,12 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
+@media (max-width: 768px) {
+  main .section-with-background > picture:last-of-type img {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   main .section.section-with-background {
     box-sizing: border-box;
