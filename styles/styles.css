@@ -408,9 +408,10 @@ main .section.highlight {
 }
 
 @media (min-width: 768px) {
-  main .section-with-background {
+  main .section.section-with-background {
     box-sizing: border-box;
     position: relative;
+    background-color: unset;
   }
   
   main .section-with-background > div:first-of-type,
