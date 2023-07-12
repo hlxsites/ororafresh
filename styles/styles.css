@@ -432,7 +432,7 @@ main .section.highlight {
   }
   
   main .section-with-background > picture:last-of-type img {
-    width: var(--wrapper-width);
+    width: 100%;
     height: 100%;
     display: block;
     position: absolute;
