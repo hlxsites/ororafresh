@@ -84,6 +84,7 @@ main .carousel-buttons button {
     background-color: var(--highlight-background-color);
     box-shadow: none;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 main .carousel-buttons button.selected {
