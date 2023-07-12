@@ -22,6 +22,5 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
-  if (isDesktop) block.querySelector('.carousel-image picture img').setAttribute('loading', 'eager');
-  else block.querySelector('.carousel-image picture:nth-of-type(2) img').setAttribute('loading', 'eager');
+  block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(2) img').setAttribute('loading', 'eager');
 }
