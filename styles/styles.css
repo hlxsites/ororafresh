@@ -353,7 +353,8 @@ footer .footer {
   header .nav-wrapper,
   .section > div,
   .hero > div > div,
-  footer .footer {
+  footer .footer,
+  .carousel-text {
     max-width: 1170px;
   }
 }
