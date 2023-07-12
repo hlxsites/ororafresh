@@ -110,11 +110,11 @@ main .carousel div.carousel-text h2::after {
 }
 
 main .carousel-image picture:first-of-type img {
-    display: block;
+    display: none;
 }
 
 main .carousel-image picture:last-of-type img {
-    display: none;
+    display: block;
 }
 
 
@@ -207,10 +207,10 @@ main .carousel-image picture:last-of-type img {
     }
 
     main .carousel-image picture:last-of-type img {
-        display: block;
+        display: none;
     }
 
     main .carousel-image picture:first-of-type img {
-        display: none;
+        display: block;
     }
 }

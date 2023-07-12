@@ -1,3 +1,5 @@
+const isDesktop = window.matchMedia('(min-width: 1200px)');
+
 export default function decorate(block) {
   const buttons = document.createElement('div');
   buttons.className = 'carousel-buttons';
@@ -20,4 +22,6 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
+  if (isDesktop) block.querySelector('.carousel-image picture img').setAttribute('loading', 'eager');
+  else block.querySelector('.carousel-image picture:nth-of-type(2) img').setAttribute('loading', 'eager');
 }
