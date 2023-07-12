@@ -20,5 +20,6 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
+  /* load second image for mobile eagerly for LCP */
   block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(2) img').setAttribute('loading', 'eager');
 }
