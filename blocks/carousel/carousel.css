@@ -74,6 +74,7 @@ main .carousel-wrapper .carousel-buttons {
 
 main .carousel-buttons button {
     top: 0;
+    position: relative;
     display: block;
     height: 15px;
     width: 15px;
@@ -83,6 +84,7 @@ main .carousel-buttons button {
     background-color: var(--highlight-background-color);
     box-shadow: none;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 main .carousel-buttons button.selected {
