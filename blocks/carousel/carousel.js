@@ -9,9 +9,9 @@ export default function decorate(block) {
     });
     /* buttons */
     const button = document.createElement('button');
+    button.setAttribute('id', `carousel-button-${i}`);
     if (!i) button.classList.add('selected');
     button.addEventListener('click', () => {
-      block.scrollTo({ top: 0, left: row.offsetLeft - row.parentNode.offsetLeft, behavior: 'smooth' });
       [...buttons.children].forEach((r) => r.classList.remove('selected'));
       [...block.children].forEach((r) => r.classList.remove('selected'));
       button.classList.add('selected');
@@ -20,6 +20,7 @@ export default function decorate(block) {
     buttons.append(button);
   });
   block.parentElement.append(buttons);
+  setInterval(() => { let nextButton = buttons.querySelector('button.selected').nextSibling; if (!nextButton) nextButton = buttons.querySelector('button'); nextButton.click(); }, 10000);
   /* load second image for mobile eagerly for LCP */
   block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(2) img').setAttribute('loading', 'eager');
 }
