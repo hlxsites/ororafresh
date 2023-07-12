@@ -10,6 +10,7 @@ export default function decorate(block) {
     /* buttons */
     const button = document.createElement('button');
     button.setAttribute('id', `carousel-button-${i}`);
+    button.setAttribute('title', 'Slide');
     if (!i) button.classList.add('selected');
     button.addEventListener('click', () => {
       [...buttons.children].forEach((r) => r.classList.remove('selected'));
