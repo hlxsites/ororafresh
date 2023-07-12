@@ -1,5 +1,3 @@
-const isDesktop = window.matchMedia('(min-width: 1200px)');
-
 export default function decorate(block) {
   const buttons = document.createElement('div');
   buttons.className = 'carousel-buttons';
