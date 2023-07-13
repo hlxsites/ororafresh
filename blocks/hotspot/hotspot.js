@@ -23,7 +23,8 @@ export default function decorate(block) {
       const topdistance = columns[2].innerHTML;
       console.log(topdistance);
       const nexticondiv = document.createElement('div');
-      const finalicon = `icon|${r}`;
+      const finalicon = `icon${r}`;
+      console.log(finalicon);
       nexticondiv.setAttribute('class', finalicon);
       nexticondiv.style.left = leftdistance;
       nexticondiv.style.top = topdistance;
