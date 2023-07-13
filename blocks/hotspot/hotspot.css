@@ -1,5 +1,9 @@
 /* block style goes here */
 
+.hotspot-img {
+    position: relative;
+}
+
 .hotspot-img img {
     max-width: 100%;
     width: auto;
@@ -10,10 +14,46 @@
     display: none;
 }
 
-.hotspot-img > .icon {
+.hotspot-img > .icon1 {
   width: 24px;
   height: 24px;
   border-radius: 100%;
   background: #ff3300;
   position: absolute;
 }
+
+
+.hotspot-img > .icon2 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #ff3300;
+    position: absolute;
+  }
+
+
+.hotspot-img > .icon3 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #ff3300;
+    position: absolute;
+  }
+
+
+.hotspot-img > .icon4 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #ff3300;
+    position: absolute;
+  }
+
+
+.hotspot-img > .icon5 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #ff3300;
+    position: absolute;
+  }

@@ -21,10 +21,14 @@ export default function decorate(block) {
       console.log(text);
       const leftdistance = columns[1].innerHTML;
       console.log(leftdistance);
-      const rightdistance = columns[2].innerHTML;
-      console.log(rightdistance);
+      const topdistance = columns[2].innerHTML;
+      console.log(topdistance);
       const nexticondiv = document.createElement('div');
-      nexticondiv.setAttribute('class', 'icon');
+      const finalicon = 'icon' + r;
+      console.log(finalicon);
+      nexticondiv.setAttribute('class', finalicon);
+      nexticondiv.style.left = leftdistance;
+      nexticondiv.style.top = topdistance;
       console.log(nexticondiv);
       parentdiv.appendChild(nexticondiv);
     }
