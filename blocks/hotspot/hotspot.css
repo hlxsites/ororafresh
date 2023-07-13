@@ -9,3 +9,10 @@
 .hidden {
     display: none;
 }
+
+.hotspot-img .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: #ff3300;
+}
