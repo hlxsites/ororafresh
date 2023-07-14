@@ -26,8 +26,6 @@ export default function decorate(block) {
       parentdiv.appendChild(nexticondiv);
       const nextpopupdiv = document.createElement('div');
       nextpopupdiv.setAttribute('class', `popup${r}`);
-      nextpopupdiv.style.left = '-350%';
-      nextpopupdiv.style.bottom = '150%';
       nextpopupdiv.innerHTML = text;
       nexticondiv.appendChild(nextpopupdiv);
     }
