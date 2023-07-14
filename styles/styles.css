@@ -324,6 +324,10 @@ main .section {
   text-align: center;
 }
 
+main .section h2 + p {
+  text-align: left;
+}
+
 main .section.light-blue {
   background-color: var(--background-light-blue);
 }
