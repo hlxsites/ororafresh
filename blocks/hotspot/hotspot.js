@@ -10,5 +10,5 @@ export default function decorate(block) {
       item.appendChild([...row.children][0]);
       row.remove();
     }
-  })
+  });
 }
