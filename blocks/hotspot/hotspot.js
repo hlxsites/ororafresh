@@ -23,12 +23,16 @@ export default function decorate(block) {
       const topdistance = columns[2].innerHTML;
       console.log(topdistance);
       const nexticondiv = document.createElement('div');
-      const finalicon = `icon${r}`;
-      console.log(finalicon);
-      nexticondiv.setAttribute('class', finalicon);
+      nexticondiv.setAttribute('class', `icon${r}`);
       nexticondiv.style.left = leftdistance;
       nexticondiv.style.top = topdistance;
       parentdiv.appendChild(nexticondiv);
+      const nextpopupdiv = document.createElement('div');
+      nextpopupdiv.setAttribute('class', `popup${r}`);
+      nextpopupdiv.style.left = '-5%';
+      nextpopupdiv.style.bottom = '-1%';
+      nextpopupdiv.innerHTML = text;
+      nexticondiv.appendChild(nextpopupdiv);
     }
   });
 }
