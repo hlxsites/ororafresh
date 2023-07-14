@@ -28,7 +28,6 @@
 }
 
 .columns > div > .columns-img-col {
-  order: 0;
   margin-bottom: 30px;
 }
 
@@ -99,7 +98,7 @@
   }
 
   .columns-2-cols > div .button-container {
-    text-align: unset;
+    text-align: center;
   }
 
   .columns-2-cols.alternate > div:nth-of-type(odd) {
