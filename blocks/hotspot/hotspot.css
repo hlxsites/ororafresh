@@ -15,7 +15,7 @@
 }
 
 
-.hotspot-img>.icon1 {
+.hotspot-img > .icon1 {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -23,7 +23,7 @@
     position: absolute;
 }
 
-.hotspot-img>.icon1>.popup1 {
+.hotspot-img > .icon1 > .popup1 {
     position: absolute;
     padding: 5px;
     width: 10vw;
@@ -39,12 +39,12 @@
     transition: opacity 0.4s linear;
 }
 
-.hotspot-img>.icon1:hover .popup1 {
+.hotspot-img > .icon1:hover .popup1 {
     opacity: 1;
 }
 
 
-.hotspot-img>.icon2 {
+.hotspot-img > .icon2 {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -52,7 +52,7 @@
     position: absolute;
 }
 
-.hotspot-img>.icon2>.popup2 {
+.hotspot-img > .icon2 > .popup2 {
     position: absolute;
     padding: 5px;
     width: 20vw;
@@ -68,11 +68,11 @@
     transition: opacity 0.4s linear;
 }
 
-.hotspot-img>.icon2:hover .popup2 {
+.hotspot-img > .icon2:hover .popup2 {
     opacity: 1;
 }
 
-.hotspot-img>.icon3 {
+.hotspot-img > .icon3 {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -80,7 +80,7 @@
     position: absolute;
 }
 
-.hotspot-img>.icon3>.popup3 {
+.hotspot-img > .icon3 > .popup3 {
     position: absolute;
     padding: 5px;
     width: 20vw;
@@ -96,11 +96,11 @@
     transition: opacity 0.4s linear;
 }
 
-.hotspot-img>.icon3:hover .popup3 {
+.hotspot-img > .icon3:hover .popup3 {
     opacity: 1;
 }
 
-.hotspot-img>.icon4 {
+.hotspot-img > .icon4 {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -108,7 +108,7 @@
     position: absolute;
 }
 
-.hotspot-img>.icon4>.popup4 {
+.hotspot-img > .icon4 > .popup4 {
     position: absolute;
     padding: 5px;
     width: 20vw;
@@ -124,11 +124,11 @@
     transition: opacity 0.4s linear;
 }
 
-.hotspot-img>.icon4:hover .popup4 {
+.hotspot-img > .icon4:hover .popup4 {
     opacity: 1;
 }
 
-.hotspot-img>.icon5 {
+.hotspot-img > .icon5 {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -136,7 +136,7 @@
     position: absolute;
 }
 
-.hotspot-img>.icon5>.popup5 {
+.hotspot-img > .icon5 > .popup5 {
     position: absolute;
     padding: 5px;
     width: 10vw;
@@ -152,12 +152,12 @@
     transition: opacity 0.4s linear;
 }
 
-.hotspot-img>.icon5:hover .popup5 {
+.hotspot-img > .icon5:hover .popup5 {
     opacity: 1;
 }
 
 @media (min-width: 650px) {
-    .hotspot-img>.icon1>.popup1 {
+    .hotspot-img > .icon1 > .popup1 {
         position: absolute;
         padding: 5px;
         width: 25vw;
@@ -174,25 +174,7 @@
     }
 
 
-    .hotspot-img>.icon2>.popup2 {
-        position: absolute;
-        padding: 5px;
-        width: 25vw;
-        background-color: var(--text-white);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
-        opacity: 0;
-        transition: opacity 0.4s linear;
-    }
-
-
-
-    .hotspot-img>.icon3>.popup3 {
+    .hotspot-img > .icon2 > .popup2 {
         position: absolute;
         padding: 5px;
         width: 25vw;
@@ -210,7 +192,7 @@
 
 
 
-    .hotspot-img>.icon4>.popup4 {
+    .hotspot-img > .icon3 > .popup3 {
         position: absolute;
         padding: 5px;
         width: 25vw;
@@ -227,7 +209,25 @@
     }
 
 
-    .hotspot-img>.icon5>.popup5 {
+
+    .hotspot-img > .icon4 > .popup4 {
+        position: absolute;
+        padding: 5px;
+        width: 25vw;
+        background-color: var(--text-white);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--text-color);
+        font-size: var(--body-font-size-xs);
+        opacity: 0;
+        transition: opacity 0.4s linear;
+    }
+
+
+    .hotspot-img > .icon5 > .popup5 {
         position: absolute;
         padding: 5px;
         width: 25vw;
