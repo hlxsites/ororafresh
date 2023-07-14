@@ -176,8 +176,8 @@
         position: absolute;
         padding: 5px;
         width: 25vw;
-        left: -500%;
-        bottom: 150%;
+        left: -13vw;
+        bottom: 13vh;
         background-color: var(--text-white);
         border-radius: 10px;
         display: flex;
@@ -196,8 +196,8 @@
         position: absolute;
         padding: 5px;
         width: 25vw;
-        left: -500%;
-        bottom: 150%;
+        left: -13vw;
+        bottom: 13vh;
         background-color: var(--text-white);
         border-radius: 10px;
         display: flex;
@@ -217,8 +217,8 @@
         position: absolute;
         padding: 5px;
         width: 25vw;
-        left: -500%;
-        bottom: 150%;
+        left: -13vw;
+        bottom: 13vh;
         background-color: var(--text-white);
         border-radius: 10px;
         display: flex;
@@ -238,8 +238,8 @@
         position: absolute;
         padding: 5px;
         width: 25vw;
-        left: -500%;
-        bottom: 150%;
+        left: -13vw;
+        bottom: 13vh;
         background-color: var(--text-white);
         border-radius: 10px;
         display: flex;
@@ -258,8 +258,8 @@
         position: absolute;
         padding: 5px;
         width: 25vw;
-        left: -500%;
-        bottom: 150%;
+        left: -13vw;
+        bottom: 13vh;
         background-color: var(--text-white);
         border-radius: 10px;
         display: flex;
