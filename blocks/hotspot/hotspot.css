@@ -1,1 +1,33 @@
-/* block style goes here */
+.block.hotspot {
+  position: relative;
+}
+
+.block.hotspot img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block.hotspot > div:nth-child(n+2) {
+  position: absolute;
+}
+
+.block.hotspot > div:nth-child(n+2)::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: #f30;
+}
+
+.block.hotspot > div .text {
+  opacity: 0;
+}
+
+.block.hotspot > div:hover .text {
+  opacity: 1;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
