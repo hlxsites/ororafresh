@@ -185,7 +185,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
+        font-size: var(--body-font-size-m);
         opacity: 0;
         transition: opacity 0.4s linear;
         z-index: +1;
@@ -205,7 +205,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
+        font-size: var(--body-font-size-m);
         opacity: 0;
         transition: opacity 0.4s linear;
         z-index: +1;
@@ -226,7 +226,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
+        font-size: var(--body-font-size-m);
         opacity: 0;
         transition: opacity 0.4s linear;
         z-index: +1;
@@ -247,7 +247,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
+        font-size: var(--body-font-size-m);
         opacity: 0;
         transition: opacity 0.4s linear;
         z-index: +1;
@@ -267,7 +267,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-xs);
+        font-size: var(--body-font-size-m);
         opacity: 0;
         transition: opacity 0.4s linear;
         z-index: +1;
