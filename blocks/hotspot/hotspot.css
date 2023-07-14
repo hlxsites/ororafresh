@@ -26,7 +26,7 @@
 .hotspot-img>.icon1>.popup1 {
     position: absolute;
     padding: 5px;
-    width: 20vw;
+    width: 10vw;
     background-color: var(--text-white);
     border-radius: 10px;
     display: flex;
@@ -139,7 +139,7 @@
 .hotspot-img>.icon5>.popup5 {
     position: absolute;
     padding: 5px;
-    width: 20vw;
+    width: 10vw;
     background-color: var(--text-white);
     border-radius: 10px;
     display: flex;
