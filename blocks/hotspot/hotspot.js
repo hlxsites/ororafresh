@@ -17,11 +17,8 @@ export default function decorate(block) {
       row.classList.add('hidden');
       const columns = [...row.children];
       const text = columns[0].innerHTML;
-      console.log(text);
       const leftdistance = columns[1].innerHTML;
-      console.log(leftdistance);
       const topdistance = columns[2].innerHTML;
-      console.log(topdistance);
       const nexticondiv = document.createElement('div');
       nexticondiv.setAttribute('class', `icon${r}`);
       nexticondiv.style.left = leftdistance;
