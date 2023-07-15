@@ -42,8 +42,7 @@
 
 @media (min-width: 650px) {
     .block.hotspot > div:nth-child(n+2):hover::after,
-    .block.hotspot > div:nth-child(n+2):focus::after,
-    .block.hotspot > div:nth-child(n+2):active::after {
+    .block.hotspot > div:nth-child(n+2):focus::after {
         content: attr(data);
         position: absolute;
         padding: 5px;
