@@ -10,8 +10,7 @@
     height: auto;
 }
 
-
-.block.hotspot  .icon1 {
+.block.hotspot > div:nth-child(n+2) {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -19,7 +18,10 @@
     position: absolute;
 }
 
-.block.hotspot .icon1 > .popup1 {
+
+.block.hotspot > div:nth-child(n+2):hover::after,
+.block.hotspot > div:nth-child(n+2):focus::after {
+    content: attr(data);
     position: absolute;
     padding: 5px;
     width: 20vw;
@@ -33,142 +35,15 @@
     align-items: center;
     border: 1px solid var(--text-color);
     font-size: var(--body-font-size-xs);
-    opacity: 0;
     transition: opacity 0.4s linear;
     z-index: +1;
 }
 
-.block.hotspot .icon1:hover .popup1 {
-    opacity: 1;
-}
-
-
-.block.hotspot .icon2 {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background: #f30;
-    position: absolute;
-}
-
-.block.hotspot .icon2 > .popup2 {
-    position: absolute;
-    padding: 5px;
-    width: 20vw;
-    left: -150%;
-    bottom: 150%;
-    background-color: var(--text-white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--text-color);
-    font-size: var(--body-font-size-xs);
-    opacity: 0;
-    transition: opacity 0.4s linear;
-    z-index: +1;
-}
-
-.block.hotspot .icon2:hover .popup2 {
-    opacity: 1;
-}
-
-.block.hotspot .icon3 {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background: #f30;
-    position: absolute;
-}
-
-.block.hotspot .icon3 > .popup3 {
-    position: absolute;
-    padding: 5px;
-    width: 20vw;
-    left: -150%;
-    bottom: 150%;
-    background-color: var(--text-white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--text-color);
-    font-size: var(--body-font-size-xs);
-    opacity: 0;
-    transition: opacity 0.4s linear;
-    z-index: +1;
-}
-
-.block.hotspot .icon3:hover .popup3 {
-    opacity: 1;
-}
-
-.block.hotspot .icon4 {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background: #f30;
-    position: absolute;
-}
-
-.block.hotspot .icon4 > .popup4 {
-    position: absolute;
-    padding: 5px;
-    width: 20vw;
-    left: -150%;
-    bottom: 150%;
-    background-color: var(--text-white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--text-color);
-    font-size: var(--body-font-size-xs);
-    opacity: 0;
-    transition: opacity 0.4s linear;
-    z-index: +1;
-}
-
-.block.hotspot .icon4:hover .popup4 {
-    opacity: 1;
-}
-
-.block.hotspot .icon5 {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background: #f30;
-    position: absolute;
-}
-
-.block.hotspot .icon5 > .popup5 {
-    position: absolute;
-    padding: 5px;
-    width: 20vw;
-    left: -150%;
-    bottom: 150%;
-    background-color: var(--text-white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--text-color);
-    font-size: var(--body-font-size-xs);
-    opacity: 0;
-    transition: opacity 0.4s linear;
-    z-index: +1;
-}
-
-.block.hotspot .icon5:hover .popup5 {
-    opacity: 1;
-}
 
 @media (min-width: 650px) {
-    .block.hotspot .icon1 > .popup1 {
+    .block.hotspot > div:nth-child(n+2):hover::after,
+    .block.hotspot > div:nth-child(n+2):focus::after {
+        content: attr(data);
         position: absolute;
         padding: 5px;
         width: 25vw;
@@ -181,90 +56,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-m);
-        opacity: 0;
-        transition: opacity 0.4s linear;
-        z-index: +1;
-    }
-
-
-    .block.hotspot .icon2 > .popup2 {
-        position: absolute;
-        padding: 5px;
-        width: 25vw;
-        left: -13vw;
-        bottom: 6vh;
-        background-color: var(--text-white);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-m);
-        opacity: 0;
-        transition: opacity 0.4s linear;
-        z-index: +1;
-    }
-
-
-
-    .block.hotspot .icon3 > .popup3 {
-        position: absolute;
-        padding: 5px;
-        width: 25vw;
-        left: -13vw;
-        bottom: 6vh;
-        background-color: var(--text-white);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-m);
-        opacity: 0;
-        transition: opacity 0.4s linear;
-        z-index: +1;
-    }
-
-
-
-    .block.hotspot .icon4 > .popup4 {
-        position: absolute;
-        padding: 5px;
-        width: 25vw;
-        left: -13vw;
-        bottom: 6vh;
-        background-color: var(--text-white);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-m);
-        opacity: 0;
-        transition: opacity 0.4s linear;
-        z-index: +1;
-    }
-
-
-    .block.hotspot .icon5 > .popup5 {
-        position: absolute;
-        padding: 5px;
-        width: 25vw;
-        left: -13vw;
-        bottom: 6vh;
-        background-color: var(--text-white);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--text-color);
-        font-size: var(--body-font-size-m);
-        opacity: 0;
+        font-size: var(--body-font-size-xs);
         transition: opacity 0.4s linear;
         z-index: +1;
     }
