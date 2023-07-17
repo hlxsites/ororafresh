@@ -23,13 +23,11 @@ export default async function decorate(block) {
     block.append(footer);
   }
   // Adding Div for Cookie preferences
-  const cookieiconparent = document.querySelector('.footer .columns div div');
-  const nextdiv = document.createElement('div');
-  nextdiv.setAttribute('id', 'teconsent');
-  cookieiconparent.appendChild(nextdiv);
+  const cookieIconDiv = document.createElement('div');
+  cookieIconDiv.setAttribute('id', 'teconsent');
+  document.querySelector('.footer .columns div div').appendChild(cookieIconDiv);
   // Adding Div for Cookie Consent Manager
-  const cookieconsentparent = document.querySelector('.footer');
-  const nextdiv1 = document.createElement('div');
-  nextdiv1.setAttribute('id', 'consent_blackbar');
-  cookieconsentparent.appendChild(nextdiv1);
+  const cookieConsentDiv = document.createElement('div');
+  cookieConsentDiv.setAttribute('id', 'consent_blackbar');
+  document.querySelector('.footer').appendChild(cookieConsentDiv);
 }
