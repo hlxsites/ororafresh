@@ -11,6 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  loadScript,
   createOptimizedPicture,
 } from './lib-franklin.js';
 
@@ -124,21 +125,6 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-}
-
-export async function loadScript(url, attrs = {}) {
-  const script = document.createElement('script');
-  script.src = url;
-  // eslint-disable-next-line no-restricted-syntax
-  for (const [name, value] of Object.entries(attrs)) {
-    script.setAttribute(name, value);
-  }
-  const loadingPromise = new Promise((resolve, reject) => {
-    script.onload = resolve;
-    script.onerror = reject;
-  });
-  document.head.append(script);
-  return loadingPromise;
 }
 
 export async function loadConsentManager() {
