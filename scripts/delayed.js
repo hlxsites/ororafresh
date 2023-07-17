@@ -7,9 +7,9 @@ sampleRUM('cwv');
 
 // add more delayed functionality here
 
-async function loadGA() {
-  loadScript('https://www.googletagmanager.com/gtag/js?id=UA-106405636-1');
-}
+// async function loadGA() {
+//   loadScript('https://www.googletagmanager.com/gtag/js?id=UA-106405636-1');
+// }
 
-await loadGA();
+// await loadGA();
 await loadConsentManager();

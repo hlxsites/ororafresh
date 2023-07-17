@@ -143,7 +143,7 @@ export async function loadScript(url, attrs = {}) {
 
 export async function loadConsentManager() {
   await loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
-  window.dispatchEvent(new CustomEvent('consentmanager'));
+  // window.dispatchEvent(new CustomEvent('consentmanager'));
 }
 
 loadPage();
