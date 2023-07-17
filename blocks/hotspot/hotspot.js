@@ -6,7 +6,7 @@ export default function decorate(block) {
       nexticondiv.style.left = [...row.children][1].textContent;
       nexticondiv.style.top = [...row.children][2].textContent;
       nexticondiv.setAttribute('data', [...row.children][0].textContent);
-      nexticondiv.addEventListener('click', () => { nexticondiv.classList.add('onclick'); });
+      nexticondiv.addEventListener('click', () => { nexticondiv.classList.toggle('onclick'); });
       row.after(nexticondiv);
       row.remove();
     }
