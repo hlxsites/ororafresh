@@ -19,9 +19,9 @@
     cursor: pointer;
 }
 
-.block.hotspot > div:nth-child(n+2)::after {
+/* .block.hotspot > div:nth-child(n+2)::after {
     opacity: 0;
-}
+} */
 
 .block.hotspot > div:nth-child(n+2):hover::after,
 .block.hotspot > div:nth-child(n+2):focus::after,
