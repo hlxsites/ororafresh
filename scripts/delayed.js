@@ -4,10 +4,13 @@ import { sampleRUM } from './lib-franklin.js';
 import { loadConsentManager } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
+// Script for Cookie consent manager
+await loadConsentManager();
 
 // Adding timer for button click in the Hero Carousel
 
 // add more delayed functionality here
+
 const contactFormBlock = document.querySelector('.block.contact-form');
 if (contactFormBlock) {
   const script = document.createElement('script');
@@ -23,6 +26,3 @@ if (contactFormBlock) {
   });
   contactFormBlock.append(script);
 }
-
-// Script for Cookie consent manager
-await loadConsentManager();
