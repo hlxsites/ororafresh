@@ -8,7 +8,6 @@ sampleRUM('cwv');
 // Adding timer for button click in the Hero Carousel
 
 // add more delayed functionality here
-
 const contactFormBlock = document.querySelector('.block.contact-form');
 if (contactFormBlock) {
   const script = document.createElement('script');
