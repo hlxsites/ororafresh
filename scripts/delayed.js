@@ -12,6 +12,7 @@ export async function loadContactForm() {
   const script = document.createElement('script');
   script.setAttribute('type', 'text/javascript');
   script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.defer = 'true';
   script.addEventListener('load', () => {
     // eslint-disable-next-line no-undef
     hbspt.forms.create({
