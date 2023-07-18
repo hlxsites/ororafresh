@@ -1,8 +1,13 @@
 // eslint-disable-next-line import/no-cycle
 import { sampleRUM } from './lib-franklin.js';
-
+// eslint-disable-next-line import/no-cycle
+import { loadConsentManager } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
+// Script for Cookie consent manager
+await loadConsentManager();
+
+// Adding timer for button click in the Hero Carousel
 
 // Adding timer for button click in the Hero Carousel
 

@@ -11,6 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  loadScript,
   createOptimizedPicture,
 } from './lib-franklin.js';
 
@@ -124,6 +125,11 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+}
+
+export async function loadConsentManager() {
+  await loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
+  window.dispatchEvent(new CustomEvent('consentmanager'));
 }
 
 loadPage();

@@ -22,4 +22,12 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
+  // Adding Div for Cookie preferences
+  const cookieIconDiv = document.createElement('div');
+  cookieIconDiv.setAttribute('id', 'teconsent');
+  document.querySelector('.footer .columns div div').appendChild(cookieIconDiv);
+  // Adding Div for Cookie Consent Manager
+  const cookieConsentDiv = document.createElement('div');
+  cookieConsentDiv.setAttribute('id', 'consent_blackbar');
+  document.querySelector('.footer').appendChild(cookieConsentDiv);
 }
