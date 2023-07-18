@@ -16,7 +16,7 @@ import {
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
-export async function loadContactForm() {
+export async function loadContactForm(block) {
   const script = document.createElement('script');
   script.setAttribute('type', 'text/javascript');
   script.src = 'https://js.hsforms.net/forms/embed/v2.js';
@@ -29,7 +29,7 @@ export async function loadContactForm() {
       formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
     });
   });
-  contactFormBlock.append(script);
+  block.append(script);
 }
 
 /**
