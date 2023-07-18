@@ -451,3 +451,7 @@ main .section.highlight {
     object-fit: cover;
   }
 }
+
+.block.contact-form {
+  height: 650px;
+}
