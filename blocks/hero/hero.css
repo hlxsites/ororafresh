@@ -27,11 +27,12 @@ main .hero h1 {
     font-size: 10vw;
     width: 60%;
     line-height: calc(10vw + 4px);
-    margin-bottom: 110px;
+    margin-bottom: 40px;
   }
 
   main .hero {
-    height: 400px;
+    height: 52vw;
+    padding: 0 25px;
   }
 
   .home main .hero h1 {
