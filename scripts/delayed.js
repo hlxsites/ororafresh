@@ -5,9 +5,9 @@ import { loadConsentManager } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
 
-// Script for Cookie consent manager
-await loadConsentManager();
-
 // Adding timer for button click in the Hero Carousel
 
 // add more delayed functionality here
+
+// Script for Cookie consent manager
+await loadConsentManager();
