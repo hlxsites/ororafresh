@@ -16,6 +16,22 @@ import {
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
+export async function loadContactForm() {
+  const script = document.createElement('script');
+  script.setAttribute('type', 'text/javascript');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.defer = 'true';
+  script.addEventListener('load', () => {
+    // eslint-disable-next-line no-undef
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: '14560092',
+      formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
+    });
+  });
+  contactFormBlock.append(script);
+}
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element

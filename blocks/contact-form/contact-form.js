@@ -1,4 +1,6 @@
+import { loadContactForm } from '../../scripts/scripts.js';
+
 // eslint-disable-next-line no-unused-vars
-export default function decorate(block) {
-  // no-op
+export default async function decorate(block) {
+  await loadContactForm();
 }
