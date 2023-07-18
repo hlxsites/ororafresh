@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-cycle
-import { sampleRUM } from './lib-franklin.js';
+import { sampleRUM, loadScript } from './lib-franklin.js';
 
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
@@ -8,8 +8,7 @@ sampleRUM('cwv');
 
 // add more delayed functionality here
 
-const contactFormBlock = document.querySelector('.block.contact-form');
-if (contactFormBlock) {
+export async function loadContactForm() {
   const script = document.createElement('script');
   script.setAttribute('type', 'text/javascript');
   script.src = 'https://js.hsforms.net/forms/embed/v2.js';
@@ -22,4 +21,9 @@ if (contactFormBlock) {
     });
   });
   contactFormBlock.append(script);
+}
+
+const contactFormBlock = document.querySelector('.block.contact-form');
+if (contactFormBlock) {
+  await loadContactForm();
 }
