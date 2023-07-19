@@ -27,6 +27,10 @@ footer .footer .columns img:last-of-type {
   max-width: 194px;
 }
 
+footer .footer > div:last-of-type {
+  padding-left: 0;
+}
+
 footer .footer > div > div:last-of-type {
   color: var(--text-grey);
   font-size: var(--body-font-size-xs);
