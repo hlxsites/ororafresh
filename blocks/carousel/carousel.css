@@ -127,7 +127,7 @@ main .carousel-image picture:last-of-type img {
         background-image: unset;
         color: unset;
         align-items: center;
-        height: 650px;
+        height: 100%;
     }
 
     main .carousel div.carousel-text {
@@ -173,7 +173,7 @@ main .carousel-image picture:last-of-type img {
         background-image: unset;
         color: unset;
         align-items: center;
-        height: 650px;
+        height: 100%;
     }
 
     main .carousel div.carousel-text {
