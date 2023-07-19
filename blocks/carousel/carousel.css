@@ -144,7 +144,7 @@ main .carousel-image picture:last-of-type img {
         max-width: 1000px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
-        height: 320px;
+        height: 15vw;
         bottom: 0;
         position: absolute;
     }
@@ -157,7 +157,7 @@ main .carousel-image picture:last-of-type img {
         max-width: 1150px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
-        height: 150px;
+        height: 5vw;
         bottom: 0;
         position: absolute;
     }
@@ -190,7 +190,7 @@ main .carousel-image picture:last-of-type img {
         max-width: 1000px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
-        height: 320px;
+        height: 15vw;
         bottom: 0;
         position: absolute;
     }
@@ -203,7 +203,7 @@ main .carousel-image picture:last-of-type img {
         max-width: 1150px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
-        height: 200px;
+        height: 5vw;
         bottom: 0;
         position: absolute;
     }
