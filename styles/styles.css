@@ -81,6 +81,12 @@
 
 }
 
+@media (max-width: 899px) {
+  :root {
+    --heading-font-size-l: 30px;
+  }
+}
+
 @media (min-width: 900px) {
   :root .home {
     --heading-font-size-xxl: 100px;
@@ -322,6 +328,11 @@ main img {
 main .section {
   padding: 64px 16px;
   text-align: center;
+}
+
+main .hero-container + .section,
+main .carousel-container + .section {
+  padding-top: 40px;
 }
 
 main .section h2 + p {
