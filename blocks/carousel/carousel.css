@@ -33,7 +33,6 @@ main .carousel > div {
     flex-shrink: 0;
     scroll-snap-align: start;
     position: absolute;
-    /* top: 0; */
     left: 0;
     height: 100%;
     align-items: flex-end;
@@ -100,7 +99,7 @@ main .carousel div.carousel-text h1 {
     color: var(--text-white);
     text-shadow: 2px 2px black;
     font-size: 6vw;
-    height: 15vw;
+    height: 20vw;
 }
 
 main .carousel div.carousel-text h2 {
