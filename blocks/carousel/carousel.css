@@ -8,7 +8,7 @@ main .carousel {
     overflow-x: scroll;
     scroll-behavior: smooth;
     position: relative;
-    height: 40vw;
+    height: 60vw;
 }
 
 main .carousel picture {
@@ -122,6 +122,10 @@ main .carousel-image picture:last-of-type img {
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
+    main .carousel {
+        height: 40vw;
+    }
+
     main .carousel > div {
         background-image: unset;
         color: unset;
@@ -168,6 +172,10 @@ main .carousel-image picture:last-of-type img {
 }
 
 @media (min-width: 1200px) {
+    main .carousel {
+        height: 40vw;
+    }
+
     main .carousel>div {
         background-image: unset;
         color: unset;
