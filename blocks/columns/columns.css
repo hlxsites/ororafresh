@@ -95,6 +95,11 @@ main .columns picture:last-of-type img {
     text-align: left;
   }
 
+  .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+  
   .columns-2-cols > div:first-of-type {
     margin-top: 0;
   }
