@@ -25,7 +25,8 @@
 }
 
 .columns > div > div {
-  order: 1;
+  flex: 1;
+  order: unset;
 }
 
 .columns > div > .columns-img-col {
@@ -79,10 +80,6 @@ main .columns picture:last-of-type img {
     gap: 32px;
   }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
 }
 
 @media (min-width: 768px) {
@@ -95,11 +92,6 @@ main .columns picture:last-of-type img {
     text-align: left;
   }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
-  
   .columns-2-cols > div:first-of-type {
     margin-top: 0;
   }
@@ -141,6 +133,7 @@ main .columns picture:last-of-type img {
   main .columns picture:last-of-type img {
     display: none;
   }
+  
 }
 
 .our-process a + a:any-link {
