@@ -1,3 +1,6 @@
+// media query match that indicates mobile/tablet width
+const isDesktop = window.matchMedia('(min-width: 900px)');
+
 export default function decorate(block) {
   const buttons = document.createElement('div');
   buttons.className = 'carousel-buttons';
@@ -23,5 +26,8 @@ export default function decorate(block) {
   block.parentElement.append(buttons);
   setInterval(() => { let nextButton = buttons.querySelector('button.selected').nextSibling; if (!nextButton) nextButton = buttons.querySelector('button'); nextButton.click(); }, 10000);
   /* load second image for mobile eagerly for LCP */
-  block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(2) img').setAttribute('loading', 'eager');
+  if (!isDesktop.matches) {
+    block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(1) img').setAttribute('loading', 'lazy');
+    block.querySelector('.carousel.block > div:first-of-type picture:nth-of-type(2) img').setAttribute('loading', 'eager');
+  }
 }
