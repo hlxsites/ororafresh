@@ -143,7 +143,7 @@ main .carousel-image picture:last-of-type img {
         font-size: 5.5vw;
         line-height: 110px;
         margin-left: 150px;
-        margin-bottom: 120px;
+        margin-bottom: 180px;
         max-width: 1000px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
@@ -156,7 +156,7 @@ main .carousel-image picture:last-of-type img {
         font-size: 2.8vw;
         line-height: 50px;
         margin-left: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 210px;
         max-width: 1150px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
@@ -193,7 +193,7 @@ main .carousel-image picture:last-of-type img {
         font-size: 89px;
         line-height: 110px;
         margin-left: 0;
-        margin-bottom: 150px;
+        margin-bottom: 190px;
         max-width: 1000px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
@@ -206,7 +206,7 @@ main .carousel-image picture:last-of-type img {
         font-size: 50px;
         line-height: 70px;
         margin-left: 0;
-        margin-bottom: 100px;
+        margin-bottom: 230px;
         max-width: 1150px;
         color: var(--text-white);
         text-shadow: 2px 2px black;
