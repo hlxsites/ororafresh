@@ -64,6 +64,15 @@
   margin-top: 0;
 }
 
+main .columns picture:first-of-type img {
+  display: none;
+}
+
+main .columns picture:last-of-type img {
+  display: block;
+  margin: auto;
+}
+
 @media (min-width: 900px) {
   .columns > div {
     flex-direction: unset;
@@ -117,6 +126,15 @@
 
   .columns-2-cols > div:nth-of-type(odd) h2::after {
     margin-right: 0;
+  }
+
+  main .columns picture:first-of-type img {
+    display: block;
+    margin: auto;
+  }
+  
+  main .columns picture:last-of-type img {
+    display: none;
   }
 }
 
