@@ -23,7 +23,7 @@ export default function decorate(block) {
     });
     buttons.append(button);
   });
-  block.parentElement.append(buttons);
+  block.append(buttons);
   setInterval(() => { let nextButton = buttons.querySelector('button.selected').nextSibling; if (!nextButton) nextButton = buttons.querySelector('button'); nextButton.click(); }, 10000);
   /* load second image for mobile eagerly for LCP */
   if (!isDesktop.matches) {
