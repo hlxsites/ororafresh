@@ -467,20 +467,19 @@ main .section.highlight {
   height: 650px;
 }
 
-.footer .icon:last-child svg {
+.footer > div > div:last-child p .icon {
 position: fixed;
 right: 10px;
 bottom: 10px;
-width: 35px;
-height: 35px;
+width: 15px;
+height: 15px;
 background: var(--text-color); 
-border-radius: 5px;
-box-shadow: 0 0 2px var(--text-color);
 cursor: pointer;
+padding: 7px;
 }
 
-.footer .icon:last-child svg:hover,
-.footer .icon:last-child svg:active {
+.footer > div > div:last-child p .icon:hover,
+.footer > div > div:last-child p .icon:active {
   background-color: #fff;
-  fill: var(--text-color) !IMPORTANT;
+  color: var(--text-color) !IMPORTANT;
 }
