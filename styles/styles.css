@@ -466,3 +466,21 @@ main .section.highlight {
 .block.contact-form {
   height: 650px;
 }
+
+.footer .icon:last-child svg {
+position: fixed;
+right: 10px;
+bottom: 10px;
+width: 35px;
+height: 35px;
+background: var(--text-color); 
+border-radius: 5px;
+box-shadow: 0 0 2px var(--text-color);
+cursor: pointer;
+}
+
+.footer .icon:last-child svg:hover,
+.footer .icon:last-child svg:active {
+  background-color: #fff;
+  fill: var(--text-color) !IMPORTANT;
+}
