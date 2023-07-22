@@ -475,8 +475,7 @@ width: 15px;
 height: 15px;
 background: var(--text-color); 
 cursor: pointer;
-padding: 7px;
-stroke-width: 50%;
+padding: 12px;
 }
 
 .footer > div > div:last-child p .icon:hover,
