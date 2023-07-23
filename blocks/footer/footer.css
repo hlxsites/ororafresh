@@ -166,11 +166,11 @@ footer .footer .columns .icon {
   width: 194px;
 }
 
-.footer > div > div:last-child p .icon:hover,
-.footer > div > div:last-child p .icon:active {
+.footer.block > div > div:last-child p:last-child .icon:hover,
+.footer.block > div > div:last-child p:last-child .icon:active {
   background-color: var(--text-white);
 }
 
-.footer > div > div:last-child p .icon:hover > svg {
+.footer.block > div > div:last-child p:last-child .icon:hover > svg {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(103%) contrast(102%);
 }
