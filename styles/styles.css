@@ -466,18 +466,3 @@ main .section.highlight {
 .block.contact-form {
   height: 650px;
 }
-
-.footer > div > div:last-child p .icon:not([class$="_hover"]) {
-position: fixed;
-right: 20px;
-bottom: 10px;
-width: 16px;
-height: 16px;
-background: var(--text-color); 
-cursor: pointer;
-padding: 12px;
-padding-left: 14px;
-display: block;
-}
-
-

@@ -166,6 +166,19 @@ footer .footer .columns .icon {
   width: 194px;
 }
 
+.footer.block > div > div:last-child p:last-child .icon {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-color); 
+  cursor: pointer;
+  padding: 12px;
+  padding-left: 14px;
+  display: block;
+  }
+  
 .footer.block > div > div:last-child p:last-child .icon:hover,
 .footer.block > div > div:last-child p:last-child .icon:active {
   background-color: var(--text-white);
