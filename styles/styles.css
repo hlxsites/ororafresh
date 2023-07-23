@@ -467,19 +467,20 @@ main .section.highlight {
   height: 650px;
 }
 
-.footer > div > div:last-child p .icon {
+.footer > div > div:last-child p .icon:not([class$="_hover"]) {
 position: fixed;
 right: 20px;
 bottom: 10px;
-width: 15px;
-height: 15px;
+width: 16px;
+height: 16px;
 background: var(--text-color); 
 cursor: pointer;
 padding: 12px;
+padding-left: 14px;
 }
 
-.footer > div > div:last-child p .icon:hover,
-.footer > div > div:last-child p .icon:active {
+.footer > div > div:last-child p .icon:not([class$="_hover"]):hover,
+.footer > div > div:last-child p .icon:not([class$="_hover"]):active {
   background-color: #fff;
   color: var(--text-color) !IMPORTANT;
 }
