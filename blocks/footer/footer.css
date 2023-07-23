@@ -177,6 +177,7 @@ footer .footer .columns .icon {
   padding: 12px;
   padding-left: 14px;
   display: block;
+  z-index: 999;
   }
   
 .footer.block > div > div:last-child p:last-child .icon:hover,

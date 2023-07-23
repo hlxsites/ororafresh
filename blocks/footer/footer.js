@@ -33,4 +33,13 @@ export default async function decorate(block) {
   // Adding Code for Bottom Top button
   const buttonScrolltoTop = block.querySelector('.footer.block > div > div:last-child p:last-child .icon');
   buttonScrolltoTop.addEventListener('click', () => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); });
+  // Adding functionality to pop up the back to top button after 100px
+  function scrollFunction() {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+      buttonScrolltoTop.style.display = 'block';
+    } else {
+      buttonScrolltoTop.style.display = 'none';
+    }
+  }
+  window.onscroll = () => { scrollFunction(); };
 }
