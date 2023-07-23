@@ -176,7 +176,7 @@ footer .footer .columns .icon {
   cursor: pointer;
   padding: 12px;
   padding-left: 14px;
-  display: block;
+  display: none;
   z-index: 10000000;
   }
   
