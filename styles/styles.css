@@ -477,10 +477,15 @@ background: var(--text-color);
 cursor: pointer;
 padding: 12px;
 padding-left: 14px;
+display: block;
 }
 
-.footer > div > div:last-child p .icon:not([class$="_hover"]):hover,
-.footer > div > div:last-child p .icon:not([class$="_hover"]):active {
-  background-color: #fff;
-  color: var(--text-color) !IMPORTANT;
+.footer > div > div:last-child p .icon:hover,
+.footer > div > div:last-child p .icon:active {
+  background-color: var(--text-white);
 }
+
+.footer > div > div:last-child p .icon:hover > svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(103%) contrast(102%);
+}
+
