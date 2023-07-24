@@ -165,3 +165,35 @@ footer .footer .columns .icon {
   height: 44px;
   width: 194px;
 }
+
+.footer.block .icon-keyboard-arrow {
+  position: fixed;
+  right: 20px;
+  bottom: -10px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-color); 
+  cursor: pointer;
+  padding: 12px;
+  padding-left: 14px;
+  z-index: 10000000;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.footer.block .icon-keyboard-arrow.visible {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+  
+.footer.block .icon-keyboard-arrow:hover,
+.footer.block .icon-keyboard-arrow:active,
+.footer.block .icon-keyboard-arrow:focus {
+  background-color: var(--text-white);
+}
+
+.footer.block .icon-keyboard-arrow:hover > svg,
+.footer.block .icon-keyboard-arrow:active > svg,
+.footer.block .icon-keyboard-arrow:focus > svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(103%) contrast(102%);
+}

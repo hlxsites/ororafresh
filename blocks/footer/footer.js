@@ -22,12 +22,18 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  // Adding Div for Cookie preferences
+  // Manage cookies
   const cookieIconDiv = document.createElement('div');
   cookieIconDiv.setAttribute('id', 'teconsent');
   document.querySelector('.footer .columns div div').appendChild(cookieIconDiv);
-  // Adding Div for Cookie Consent Manager
   const cookieConsentDiv = document.createElement('div');
   cookieConsentDiv.setAttribute('id', 'consent_blackbar');
   document.querySelector('.footer').appendChild(cookieConsentDiv);
+  // Back to top
+  const buttonScrolltoTop = block.querySelector('.footer.block .icon-keyboard-arrow');
+  buttonScrolltoTop.addEventListener('click', () => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); });
+  window.onscroll = function () {
+    if (window.scrollY > 200) buttonScrolltoTop.classList.add('visible');
+    else buttonScrolltoTop.classList.remove('visible');
+  };
 }
