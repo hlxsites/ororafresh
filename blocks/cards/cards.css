@@ -42,7 +42,7 @@ main .section .cards {
 }
 
 .cards > ul > li img {
-  width: 60%;
+  /* width: 60%; */
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
