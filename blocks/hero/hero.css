@@ -32,6 +32,7 @@ main .hero h1 {
 
   main .hero {
     height: 52vw;
+    min-height: 400px;
     padding: 0 25px;
   }
 
