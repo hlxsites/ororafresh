@@ -25,7 +25,8 @@
 }
 
 .columns > div > div {
-  order: 1;
+  flex: 1;
+  order: unset;
 }
 
 .columns > div > .columns-img-col {
@@ -64,16 +65,23 @@
   margin-top: 0;
 }
 
+main .columns picture:first-of-type img {
+  display: none;
+}
+
+main .columns picture:last-of-type img {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  height: auto;
+}
+
 @media (min-width: 900px) {
   .columns > div {
     flex-direction: unset;
     gap: 32px;
   }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
 }
 
 @media (min-width: 768px) {
@@ -118,6 +126,16 @@
   .columns-2-cols > div:nth-of-type(odd) h2::after {
     margin-right: 0;
   }
+
+  main .columns picture:first-of-type img {
+    display: block;
+    margin: auto;
+  }
+  
+  main .columns picture:last-of-type img {
+    display: none;
+  }
+  
 }
 
 .our-process a + a:any-link {
