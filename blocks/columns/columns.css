@@ -72,6 +72,8 @@ main .columns picture:first-of-type img {
 main .columns picture:last-of-type img {
   display: block;
   margin: auto;
+  max-width: 200px;
+  height: auto;
 }
 
 @media (min-width: 900px) {
