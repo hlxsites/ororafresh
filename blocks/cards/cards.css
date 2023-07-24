@@ -18,8 +18,8 @@ main .section .cards {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* grid-gap: 30px; */
 }
 
 .cards > ul > li {
@@ -42,7 +42,7 @@ main .section .cards {
 }
 
 .cards > ul > li img {
-  width: 100%;
+  /* width: 100%; */
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
