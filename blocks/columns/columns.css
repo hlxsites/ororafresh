@@ -65,11 +65,11 @@
   margin-top: 0;
 }
 
-main .columns picture:first-of-type img {
+main .columns > div:first-of-type > div > picture:first-of-type img {
   display: none;
 }
 
-main .columns picture:last-of-type img {
+main .columns > div:first-of-type > div > picture:last-of-type img {
   display: block;
   margin: auto;
   max-width: 200px;
@@ -127,12 +127,12 @@ main .columns picture:last-of-type img {
     margin-right: 0;
   }
 
-  main .columns picture:first-of-type img {
+  main .columns > div:first-of-type > div > picture:first-of-type img {
     display: block;
     margin: auto;
   }
   
-  main .columns picture:last-of-type img {
+  main .columns > div:first-of-type > div > picture:last-of-type img {
     display: none;
   }
   
