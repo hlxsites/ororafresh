@@ -166,7 +166,7 @@ footer .footer .columns .icon {
   width: 194px;
 }
 
-.footer.block .icon-keyboard_arrow {
+.footer.block .icon-keyboard-arrow {
   position: fixed;
   right: 20px;
   bottom: -10px;
@@ -181,19 +181,19 @@ footer .footer .columns .icon {
   opacity: 0;
 }
 
-.footer.block .icon-keyboard_arrow.visible {
+.footer.block .icon-keyboard-arrow.visible {
   transform: translateY(-20px);
   opacity: 1;
 }
   
-.footer.block .icon-keyboard_arrow:hover,
-.footer.block .icon-keyboard_arrow:active,
-.footer.block .icon-keyboard_arrow:focus {
+.footer.block .icon-keyboard-arrow:hover,
+.footer.block .icon-keyboard-arrow:active,
+.footer.block .icon-keyboard-arrow:focus {
   background-color: var(--text-white);
 }
 
-.footer.block .icon-keyboard_arrow:hover > svg,
-.footer.block .icon-keyboard_arrow:active > svg,
-.footer.block .icon-keyboard_arrow:focus > svg {
+.footer.block .icon-keyboard-arrow:hover > svg,
+.footer.block .icon-keyboard-arrow:active > svg,
+.footer.block .icon-keyboard-arrow:focus > svg {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(103%) contrast(102%);
 }

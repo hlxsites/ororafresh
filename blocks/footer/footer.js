@@ -30,7 +30,7 @@ export default async function decorate(block) {
   cookieConsentDiv.setAttribute('id', 'consent_blackbar');
   document.querySelector('.footer').appendChild(cookieConsentDiv);
   // Back to top
-  const buttonScrolltoTop = block.querySelector('.footer.block .icon-keyboard_arrow');
+  const buttonScrolltoTop = block.querySelector('.footer.block .icon-keyboard-arrow');
   buttonScrolltoTop.addEventListener('click', () => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); });
   window.onscroll = function () {
     if (window.scrollY > 200) buttonScrolltoTop.classList.add('visible');
