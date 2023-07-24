@@ -8,7 +8,7 @@ main .section .cards-wrapper {
 }
 
 main .section .cards {
-  text-align: left;
+  text-align: center;
   font-size: var(--body-font-size-s);
   padding: 15px;
 }
@@ -18,7 +18,7 @@ main .section .cards {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
 }
 
@@ -42,7 +42,7 @@ main .section .cards {
 }
 
 .cards > ul > li img {
-  /* width: 60%; */
+  /* width: 100%; */
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
