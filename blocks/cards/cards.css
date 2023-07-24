@@ -103,5 +103,9 @@ main .section .cards.global-resources {
   font-weight: 900;
 }
 
+.cards.global-resources > ul > li {
+  background-color: var(--highlight-background-color);
+}
+
 
 
