@@ -22,24 +22,18 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  // Adding Div for Cookie preferences
+  // Manage cookies
   const cookieIconDiv = document.createElement('div');
   cookieIconDiv.setAttribute('id', 'teconsent');
   document.querySelector('.footer .columns div div').appendChild(cookieIconDiv);
-  // Adding Div for Cookie Consent Manager
   const cookieConsentDiv = document.createElement('div');
   cookieConsentDiv.setAttribute('id', 'consent_blackbar');
   document.querySelector('.footer').appendChild(cookieConsentDiv);
-  // Adding Code for Bottom Top button
-  const buttonScrolltoTop = block.querySelector('.footer.block > div > div:last-child p:last-child .icon');
+  // Back to top
+  const buttonScrolltoTop = block.querySelector('.footer.block .icon-keyboard_arrow');
   buttonScrolltoTop.addEventListener('click', () => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); });
-  // Adding functionality to pop up the back to top button after 100px
-  function scrollFunction() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-      buttonScrolltoTop.style.display = 'block';
-    } else {
-      buttonScrolltoTop.style.display = 'none';
-    }
-  }
-  window.onscroll = () => { scrollFunction(); };
+  window.onscroll = function () {
+    if (window.scrollY > 200) buttonScrolltoTop.classList.add('visible');
+    else buttonScrolltoTop.classList.remove('visible');
+  };
 }
