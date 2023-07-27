@@ -131,6 +131,7 @@ export async function loadConsentManager() {
   loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
 }
 
+// Invoking the hubspot form implementation on contact-us page
 const scriptHubspot = document.createElement('script');
 scriptHubspot.setAttribute('type', 'text/javascript');
 scriptHubspot.setAttribute('data-hubspot-rendered', 'true');
