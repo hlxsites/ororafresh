@@ -135,7 +135,6 @@ export async function loadConsentManager() {
 export function loadhubspotform() {
   const scriptHubspot = document.createElement('script');
   scriptHubspot.setAttribute('type', 'text/javascript');
-  scriptHubspot.setAttribute('data-hubspot-rendered', 'true');
   scriptHubspot.src = 'https://js.hsforms.net/forms/embed/v2.js';
   scriptHubspot.addEventListener('load', () => {
     // eslint-disable-next-line no-undef
