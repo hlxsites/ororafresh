@@ -148,3 +148,5 @@ export function loadhubspotform() {
   });
   document.head.append(scriptHubspot);
 }
+
+loadPage();
