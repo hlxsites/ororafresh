@@ -2,10 +2,15 @@
 import { sampleRUM, loadScript } from './lib-franklin.js';
 // eslint-disable-next-line import/no-cycle
 import { loadConsentManager, loadhubspotform } from './scripts.js';
+
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
+
 // Loading hubspot form
 await loadhubspotform();
+
+// Script for Cookie consent manager
+// await loadConsentManager();
 
 // google tag manager
 const gtmId = 'GTM-WSGNHXL';
@@ -22,9 +27,6 @@ loadScript(`https://www.googletagmanager.com/gtag/js?id=${gaId}`, 'async', () =>
 // Adding GTM Event Listner
 // eslint-disable-next-line
 console.log("TrustArc Events Binding..."); var dispatched = {}; var i = self.postMessage && setInterval(function () { if (self.PrivacyManagerAPI && i) { var apiObject = { PrivacyManagerAPI: { action: "getConsentDecision", timestamp: new Date().getTime(), self: self.location.host }}; self.top.postMessage(JSON.stringify(apiObject), "*"); i = clearInterval(i); }}, 50); self.addEventListener("message", function (e, d) { try { if (e.data && (d = JSON.parse(e.data)) && (d = d.PrivacyManagerAPI) && d.capabilities && d.action == "getConsentDecision") { var newDecision = self.PrivacyManagerAPI.callApi("getGDPRConsentDecision", self.location.host).consentDecision; newDecision && newDecision.forEach(function (label) { if (!dispatched[label]) { self.dataLayer && self.dataLayer.push({ "event": "GDPR Pref Allows " + label }); dispatched[label] = 1; } }); } } catch (xx) { /* not a cm api message */ } });
-
-// Script for Cookie consent manager
-await loadConsentManager();
 
 // Adding timer for button click in the Hero Carousel
 
