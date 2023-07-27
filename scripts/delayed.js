@@ -5,7 +5,7 @@ import { loadConsentManager } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
 // Script for Cookie consent manager
-// await loadConsentManager();
+await loadConsentManager();
 
 // google tag manager
 const gtmId = 'GTM-WSGNHXL';
