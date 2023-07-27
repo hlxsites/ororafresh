@@ -4,23 +4,6 @@ import { sampleRUM, loadScript } from './lib-franklin.js';
 import { loadConsentManager } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
-// Script for hubspot form implementation in contact-us page
-const contactFormBlock = document.querySelector('.block.contact-form');
-if (contactFormBlock) {
-  const script = document.createElement('script');
-  script.setAttribute('type', 'text/javascript');
-  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
-  script.addEventListener('load', () => {
-    // eslint-disable-next-line no-undef
-    hbspt.forms.create({
-      region: 'na1',
-      portalId: '14560092',
-      formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
-    });
-  });
-  contactFormBlock.append(script);
-}
-
 // Script for Cookie consent manager
 await loadConsentManager();
 
@@ -46,18 +29,18 @@ console.log("TrustArc Events Binding..."); var dispatched = {}; var i = self.pos
 
 // add more delayed functionality here
 
-// const contactFormBlock = document.querySelector('.block.contact-form');
-// if (contactFormBlock) {
-//   const script = document.createElement('script');
-//   script.setAttribute('type', 'text/javascript');
-//   script.src = 'https://js.hsforms.net/forms/embed/v2.js';
-//   script.addEventListener('load', () => {
-//     // eslint-disable-next-line no-undef
-//     hbspt.forms.create({
-//       region: 'na1',
-//       portalId: '14560092',
-//       formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
-//     });
-//   });
-//   contactFormBlock.append(script);
-// }
+const contactFormBlock = document.querySelector('.block.contact-form');
+if (contactFormBlock) {
+  const script = document.createElement('script');
+  script.setAttribute('type', 'text/javascript');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.addEventListener('load', () => {
+    // eslint-disable-next-line no-undef
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: '14560092',
+      formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
+    });
+  });
+  contactFormBlock.append(script);
+}
