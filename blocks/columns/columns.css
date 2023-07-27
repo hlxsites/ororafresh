@@ -135,6 +135,12 @@ main .columns > div:first-of-type > div > picture:last-of-type img {
     display: block;
     margin: auto;
   }
+
+  main .full-image.columns > div:first-of-type > div > picture:first-of-type img {
+    max-width: 100%;
+    width: 566px;
+    height: auto;
+  }
   
 }
 
