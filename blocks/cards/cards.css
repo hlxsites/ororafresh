@@ -105,6 +105,7 @@ main .section .cards.global-resources {
 
 .cards.global-resources > ul > li {
   background-color: var(--highlight-background-color);
+  padding-bottom: 0;
 }
 
 
