@@ -10,7 +10,7 @@ sampleRUM('cwv');
 await loadhubspotform();
 
 // Script for Cookie consent manager
-// await loadConsentManager();
+await loadConsentManager();
 
 // google tag manager
 const gtmId = 'GTM-WSGNHXL';
