@@ -129,7 +129,25 @@ async function loadPage() {
 
 export async function loadConsentManager() {
   await loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
-  window.dispatchEvent(new CustomEvent('consentmanager'));
+  // window.dispatchEvent(new CustomEvent('consentmanager'));
+}
+
+export async function loadhubspotform() {
+  const contactFormBlock = document.querySelector('.block.contact-form');
+  if (contactFormBlock) {
+    const script = document.createElement('script');
+    script.setAttribute('type', 'text/javascript');
+    script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+    script.addEventListener('load', () => {
+      // eslint-disable-next-line no-undef
+      hbspt.forms.create({
+        region: 'na1',
+        portalId: '14560092',
+        formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
+      });
+    });
+    contactFormBlock.append(script);
+  }
 }
 
 loadPage();
