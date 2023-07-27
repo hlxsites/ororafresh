@@ -132,7 +132,7 @@ export async function loadConsentManager() {
   window.dispatchEvent(new CustomEvent('consentmanager'));
 }
 
-// Invoking the hubspot form implementation on contact-us page
+// hubspot form implementation on contact-us page
 export function loadhubspotform() {
   const scriptHubspot = document.createElement('script');
   scriptHubspot.setAttribute('type', 'text/javascript');
@@ -148,7 +148,3 @@ export function loadhubspotform() {
   });
   document.head.append(scriptHubspot);
 }
-
-loadhubspotform();
-
-loadPage();

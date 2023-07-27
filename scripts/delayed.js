@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-cycle
 import { sampleRUM, loadScript } from './lib-franklin.js';
 // eslint-disable-next-line import/no-cycle
-import { loadConsentManager } from './scripts.js';
+import { loadConsentManager, loadhubspotform } from './scripts.js';
 
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
@@ -30,3 +30,6 @@ console.log("TrustArc Events Binding..."); var dispatched = {}; var i = self.pos
 // Adding timer for button click in the Hero Carousel
 
 // add more delayed functionality here
+
+// Invoking the hubspot form implementation on contact-us page
+loadhubspotform();
