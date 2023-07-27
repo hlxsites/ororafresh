@@ -34,6 +34,7 @@ const contactFormBlock = document.querySelector('.block.contact-form');
 if (contactFormBlock) {
   const script = document.createElement('script');
   script.setAttribute('type', 'text/javascript');
+  script.setAttribute('data-cookieconsent', 'ignore');
   script.src = 'https://js.hsforms.net/forms/embed/v2.js';
   script.addEventListener('load', () => {
     // eslint-disable-next-line no-undef
