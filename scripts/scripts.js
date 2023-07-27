@@ -132,19 +132,23 @@ export async function loadConsentManager() {
 }
 
 // Invoking the hubspot form implementation on contact-us page
-const scriptHubspot = document.createElement('script');
-scriptHubspot.setAttribute('type', 'text/javascript');
-scriptHubspot.setAttribute('data-hubspot-rendered', 'true');
-scriptHubspot.src = 'https://js.hsforms.net/forms/embed/v2.js';
-scriptHubspot.addEventListener('load', () => {
-  // eslint-disable-next-line no-undef
-  hbspt.forms.create({
-    region: 'na1',
-    portalId: '14560092',
-    formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
-    target: '.block.contact-form',
+export function loadhubspotform() {
+  const scriptHubspot = document.createElement('script');
+  scriptHubspot.setAttribute('type', 'text/javascript');
+  scriptHubspot.setAttribute('data-hubspot-rendered', 'true');
+  scriptHubspot.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  scriptHubspot.addEventListener('load', () => {
+    // eslint-disable-next-line no-undef
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: '14560092',
+      formId: 'af288827-9574-4a29-89eb-1b853eae1c20',
+      target: '.block.contact-form',
+    });
   });
-});
-document.head.append(scriptHubspot);
+  document.head.append(scriptHubspot);
+}
+
+loadhubspotform();
 
 loadPage();
