@@ -128,7 +128,8 @@ async function loadPage() {
 }
 
 export async function loadConsentManager() {
-  loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
+  await loadScript('https://consent.trustarc.com/notice?domain=orora.com&c=teconsent&js=nj&noticeType=bb&privacypolicylink=https%3A%2F%2Fororafresh.com%2Fprivacy-policy&gtm=1');
+  window.dispatchEvent(new CustomEvent('consentmanager'));
 }
 
 // Invoking the hubspot form implementation on contact-us page
