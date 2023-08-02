@@ -236,7 +236,7 @@ a.button.primary:any-link {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
-  padding: 15px 75px;
+  padding: 0;
   background-color: var(--button-background);
   box-shadow: 0 5px 0 var(--button-shadow);
   color: var(--button-color);
@@ -362,6 +362,10 @@ main .section.hero-container {
   .hero > div > div {
     max-width: 870px;
     margin: auto;
+  }
+  
+  a.button.primary:any-link {
+    padding: 15px 75px;
   }
 }
 
