@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   margin: auto;
   max-width: 1264px;
-  padding: 0 1rem;
+  padding: 0 .2rem;
   font-family: var(--body-font-family);
 }
 
@@ -23,6 +23,7 @@ header nav {
   header nav {
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
   }
 
   header nav[aria-expanded="true"] {
@@ -197,7 +198,7 @@ header nav .nav-sections ul > li > ul {
 
   header nav .nav-sections > ul  {
     background-color: var(--background-color);
-    padding: 0 50px 20px;
+    padding: 0;
     margin: 0;
   }
 
@@ -258,6 +259,10 @@ header nav .nav-sections ul > li > ul {
     justify-content: end;
   }
 
+  header nav .nav-sections > ul  {
+    padding: 0 50px 20px;
+  }
+
   header nav .nav-sections > ul > li {
     flex: 0 1 auto;
     position: relative;
@@ -299,4 +304,5 @@ header nav .nav-sections ul > li > ul {
   header nav .nav-sections > ul > li > ul > li {
     padding: 8px 0;
   }
+
 }
