@@ -236,7 +236,7 @@ a.button.primary:any-link {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
-  padding: 0;
+  padding: 15px 35px;
   background-color: var(--button-background);
   box-shadow: 0 5px 0 var(--button-shadow);
   color: var(--button-color);
