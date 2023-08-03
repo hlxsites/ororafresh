@@ -16,11 +16,17 @@ const loadScript = (url, callback, type) => {
   return script;
 };
 
-const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-    <iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
-      scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
-    </iframe>
-  </div>`;
+const isDesktop = window.matchMedia('(min-width: 900px)');
+
+const getDefaultEmbed = (isDesktop) ? (url) => `<div style="left: 0; width: 100%; height: 476px; position: relative; padding-bottom: 0;">
+<iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
+  scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
+</iframe>
+</div>` : (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+<iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
+  scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
+</iframe>
+</div>`;
 
 const embedYoutube = (url, autoplay) => {
   const usp = new URLSearchParams(url.search);

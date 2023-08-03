@@ -5,7 +5,7 @@ main .embed {
   margin: 32px auto;
 }
 
-main .embed > div {
+.block.embed > div {
   display: flex;
   justify-content: center;
 }
