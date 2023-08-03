@@ -127,10 +127,15 @@ export default async function decorate(block) {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
         navSection.addEventListener('click', () => {
           if (!isDesktop.matches) {
+            console.log(navSection.getAttribute('aria-expanded'));
             const expanded = navSection.getAttribute('aria-expanded') === 'true';
-            if (navSection.querySelector('ul')) document.querySelector('header').style.height = '425px';
+            console.log(expanded);
             toggleAllNavSections(navSections);
+            console.log(navSection.getAttribute('aria-expanded'));
             navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            console.log(navSection.getAttribute('aria-expanded'));
+            if ((navSection.querySelector('ul')) && navSection.getAttribute('aria-expanded') === 'true') document.querySelector('header').style.height = '425px';
+            if ((navSection.querySelector('ul')) && navSection.getAttribute('aria-expanded') === 'false') document.querySelector('header').style.height = '321px';
           }
         });
       });
