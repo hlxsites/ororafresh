@@ -1,1 +1,20 @@
 /* styles go here */
+
+.contact-form-container h3 {
+    font-size: var(--heading-font-size-l);
+    text-align: left;
+}
+
+.contact-form-container h3::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--title-border-color);
+    height: 1px;
+    width: 100px;
+}
+
+.contact-form-container p {
+    text-align: left;
+    font-size: var(--body-font-size-m);
+    margin-bottom: 50px;
+}
