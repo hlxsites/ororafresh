@@ -128,6 +128,7 @@ export default async function decorate(block) {
         navSection.addEventListener('click', () => {
           if (!isDesktop.matches) {
             const expanded = navSection.getAttribute('aria-expanded') === 'true';
+            if (navSection.querySelector('ul')) document.querySelector('header').style.height = '425px';
             toggleAllNavSections(navSections);
             navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
           }

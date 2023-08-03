@@ -125,7 +125,7 @@ nav {
 
 @media (max-width: 899px) {
   header[aria-expanded="true"] {
-    height: var(--nav-expanded-expanded-height);
+    height: var(--nav-expanded-height);
   }
 }
 
