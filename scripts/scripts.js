@@ -149,4 +149,6 @@ export function loadhubspotform() {
   document.head.append(scriptHubspot);
 }
 
+loadhubspotform();
+
 loadPage();
