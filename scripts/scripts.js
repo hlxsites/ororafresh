@@ -149,6 +149,6 @@ function loadhubspotform() {
   document.head.append(scriptHubspot);
 }
 
-setTimeout(loadhubspotform(), 2000);
+setTimeout(loadhubspotform, 2000);
 
 loadPage();
