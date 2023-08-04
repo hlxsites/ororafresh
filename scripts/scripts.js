@@ -133,7 +133,7 @@ export async function loadConsentManager() {
 }
 
 // hubspot form implementation on contact-us page
-export async function loadhubspotform() {
+async function loadhubspotform() {
   const scriptHubspot = document.createElement('script');
   scriptHubspot.setAttribute('type', 'text/javascript');
   scriptHubspot.src = 'https://js.hsforms.net/forms/embed/v2.js';
@@ -149,6 +149,6 @@ export async function loadhubspotform() {
   document.head.append(scriptHubspot);
 }
 
-loadhubspotform();
+await loadhubspotform();
 
 loadPage();
