@@ -30,9 +30,9 @@
 
 .contact-form.block > .spinner::after {
     content: "";
-    width: 200px;
-    height: 200px;
-    border: 80px solid var(--highlight-background-color);
+    width: 150px;
+    height: 150px;
+    border: 60px solid var(--highlight-background-color);
     border-top-color: var(--title-border-color);
     border-radius: 50%;
     animation-name: loading;
