@@ -24,15 +24,15 @@
     background-color: var(--text-white);
     transition: opacity 0.75s, visibility 0.75s;
     position: absolute;
-    margin-top: 20vh;
-    left: 40%;
+    margin-top: 10vh;
+    left: 50%;
 }
 
 .contact-form.block > .spinner::after {
     content: "";
-    width: 120px;
-    height: 120px;
-    border: 40px solid var(--highlight-background-color);
+    width: 150px;
+    height: 150px;
+    border: 50px solid var(--highlight-background-color);
     border-top-color: var(--title-border-color);
     border-radius: 50%;
     animation-name: loading;
