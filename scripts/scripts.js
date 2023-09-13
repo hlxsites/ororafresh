@@ -109,6 +109,13 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+
+  const usp = new URLSearchParams(window.location.search);
+  const utmParams = [...usp.entries()]
+    .filter(([key]) => key.startsWith('utm_') && key !== 'utm_id');
+  utmParams.forEach(([key, value]) => {
+    sampleRUM('utm-campaign', { source: key, target: value });
+  });
 }
 
 /**
