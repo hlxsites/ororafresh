@@ -90,10 +90,10 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  window.onscroll = function () {
+  document.addEventListener('scroll', () => {
     if (window.scrollY > 200) block.closest('header').classList.add('float');
     else block.closest('header').classList.remove('float');
-  };
+  });
 
   // fetch nav content
   const navMeta = getMetadata('nav');
