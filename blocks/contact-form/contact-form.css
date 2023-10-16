@@ -18,3 +18,35 @@
     font-size: var(--body-font-size-m);
     margin-bottom: 50px;
 }
+
+.contact-form.block > .spinner {
+    display: flex;
+    background-color: var(--text-white);
+    transition: opacity 0.75s, visibility 0.75s;
+    position: absolute;
+    margin-top: 10vh;
+    left: 45%;
+}
+
+.contact-form.block > .spinner::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 50px solid var(--highlight-background-color);
+    border-top-color: var(--title-border-color);
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-iteration-count: 5;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    } 
+
+    to{
+        transform: rotate(1turn);
+    }
+}
